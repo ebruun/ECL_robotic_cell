@@ -7,7 +7,7 @@ if __name__ == '__main__':
     ros.run()
 
     # Create ABB Client
-    abb = rrc.AbbClient(ros, '/rob1')
+    abb = rrc.AbbClient(ros, '/rob2')
     print('Connected.')
 
     # Read value of joints
@@ -17,7 +17,7 @@ if __name__ == '__main__':
     print(robot_joints, external_axes)
 
     # Change a joint value [°]
-    robot_joints.rax_1 += 30
+    robot_joints.rax_1 += 5
 
     # Set speed [mm/s]
     speed = 100
