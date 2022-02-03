@@ -27,6 +27,7 @@
       </geometry>
     </collision>
   </link>
+
   <link name="link_1">
     <inertial>
       <origin xyz="0.18000 0.00000 0.50000"/>
@@ -47,6 +48,7 @@
       </geometry>
     </collision>
   </link>
+
   <link name="link_2">
     <inertial>
       <origin xyz="0.94000 0.08000 -0.34000"/>
@@ -67,6 +69,7 @@
       </geometry>
     </collision>
   </link>
+
   <link name="link_3">
     <inertial>
       <origin xyz="0.07000 -0.26600 0.08800"/>
@@ -87,6 +90,7 @@
       </geometry>
     </collision>
   </link>
+
   <link name="link_4">
     <inertial>
       <origin xyz="0.00000 0.00000 1.00000"/>
@@ -107,6 +111,7 @@
       </geometry>
     </collision>
   </link>
+
   <link name="link_5">
     <inertial>
       <origin xyz="0.14000 0.00000 0.00000"/>
@@ -127,6 +132,7 @@
       </geometry>
     </collision>
   </link>
+
   <link name="link_6">
     <inertial>
       <origin xyz="0.08100 -0.09100 0.33200"/>
@@ -147,8 +153,10 @@
       </geometry>
     </collision>
   </link>
+
   <link name="tool0"/>
   <!-- end of link list -->
+
   <!-- joint list -->
   <joint name="joint_1" type="revolute">
     <parent link="base_link"/>
@@ -158,6 +166,7 @@
     <limit effort="100000" lower="-3.14159" upper="3.14159" velocity="2.618"/>
     <dynamics damping="0.2" friction="0"/>
   </joint>
+
   <joint name="joint_2" type="revolute">
     <parent link="link_1"/>
     <child link="link_2"/>
@@ -166,6 +175,7 @@
     <limit effort="100000" lower="-1.5708" upper="2.61799" velocity="2.618"/>
     <dynamics damping="0.2" friction="0"/>
   </joint>
+
   <joint name="joint_3" type="revolute">
     <parent link="link_2"/>
     <child link="link_3"/>
@@ -174,6 +184,7 @@
     <limit effort="100000" lower="-3.14159" upper="1.309" velocity="2.618"/>
     <dynamics damping="0.2" friction="0"/>
   </joint>
+
   <joint name="joint_4" type="revolute">
     <parent link="link_3"/>
     <child link="link_4"/>
@@ -182,6 +193,7 @@
     <limit effort="10000" lower="-6.98132" upper="6.98132" velocity="6.2832"/>
     <dynamics damping="0.2" friction="0"/>
   </joint>
+
   <joint name="joint_5" type="revolute">
     <parent link="link_4"/>
     <child link="link_5"/>
@@ -190,6 +202,7 @@
     <limit effort="100000" lower="-2.18166" upper="2.0944" velocity="6.2832"/>
     <dynamics damping="0.2" friction="0"/>
   </joint>
+
   <joint name="joint_6" type="revolute">
     <parent link="link_5"/>
     <child link="link_6"/>
@@ -198,12 +211,14 @@
     <limit effort="100000" lower="-6.98132" upper="6.98132" velocity="7.854"/>
     <dynamics damping="0.2" friction="0"/>
   </joint>
+
   <joint name="joint_6-tool0" type="fixed">
     <parent link="link_6"/>
     <child link="tool0"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
   <!-- end of joint list -->
+  
   <!-- ROS base_link to ABB World Coordinates transform -->
   <link name="base"/>
   <joint name="base_link-base" type="fixed">

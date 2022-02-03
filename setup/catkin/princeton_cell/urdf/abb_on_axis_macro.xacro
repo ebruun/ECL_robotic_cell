@@ -8,12 +8,14 @@
 
     <xacro:linear_axis prefix="${prefix}"/>
 
+    <!-- joint list -->
     <joint name="${prefix}abb_joint" type="fixed">
       <parent link="${prefix}cart"/>
       <child  link="${prefix}base_link"/>
       <origin xyz="0 0 0 " rpy="0 0 ${pi/2} "/>
       <dynamics damping="0.2" friction="0" />
     </joint>
+    <!-- end of joint list -->
 
     <xacro:abb_irb4600_40_255 prefix="${prefix}"/>
     <xacro:gripper prefix="${prefix}" connected_to="${prefix}tool0"/>
