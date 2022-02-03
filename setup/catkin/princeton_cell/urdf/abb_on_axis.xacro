@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 <robot name="abb_on_axis" xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <!-- include files -->
   <xacro:include filename="$(find princeton_cell)/urdf/abb_on_axis_macro.xacro"/>
+  <!-- end of include files -->
+
+  <!-- parameter defs -->
   <xacro:abb_on_axis prefix="" />
+  <!-- end of parameter defs -->
 </robot>

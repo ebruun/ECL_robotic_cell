@@ -2,5 +2,5 @@
 
 <robot name="abb_irb7600_400_255" xmlns:xacro="http://wiki.ros.org/xacro">
   <xacro:include filename="$(find abb_irb7600_400_255)/urdf/abb_irb7600_400_255_macro.xacro"/>
-  <xacro:abb_irb4600_40_255 prefix=""/>
+  <xacro:abb_irb7600_400_255 prefix=""/>
 </robot>

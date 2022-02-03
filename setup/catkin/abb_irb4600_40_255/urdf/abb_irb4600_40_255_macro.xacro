@@ -134,8 +134,8 @@
           <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_6.stl"/>
         </geometry>
       </collision>
-    </link>'
-    '
+    </link>
+    
     <link name="${prefix}tool0"/>
     <!-- end of link list -->
 
