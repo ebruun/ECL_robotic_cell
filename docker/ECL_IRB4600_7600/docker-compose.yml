@@ -2,9 +2,9 @@ version: '2'
 services:
   createlab:
     image: gramaziokohler/ros-createlab
-    container_name: ECL_4600
+    container_name: ECL_4600_7600
     environment:
-      - ROS_HOSTNAME=ECL_4600
+      - ROS_HOSTNAME=ECL_4600_7600
       - ROS_MASTER_URI=http://createlab:11311
       - ROS_LANG_DISABLE=genlisp:gennodejs:geneus
       - DISPLAY=host.docker.internal:0.0
@@ -18,5 +18,6 @@ services:
     volumes:
       - ./scripts:/root/catkin_ws/scripts
       - ./../../setup/catkin/abb_irb4600_40_255:/root/catkin_ws/src/abb_irb4600_40_255
+      - ./../../setup/catkin/abb_irb7600_400_255:/root/catkin_ws/src/abb_irb7600_400_255
       - ./../../setup/catkin/princeton_cell:/root/catkin_ws/src/princeton_cell
       - ./../../setup/catkin/princeton_cell_moveit:/root/catkin_ws/src/princeton_cell_moveit
