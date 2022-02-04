@@ -2,9 +2,9 @@ version: '2'
 services:
   createlab:
     image: gramaziokohler/ros-createlab
-    container_name: createlab
+    container_name: ECL
     environment:
-      - ROS_HOSTNAME=createlab
+      - ROS_HOSTNAME=ECL
       - ROS_MASTER_URI=http://createlab:11311
       - ROS_LANG_DISABLE=genlisp:gennodejs:geneus
       - DISPLAY=host.docker.internal:0.0

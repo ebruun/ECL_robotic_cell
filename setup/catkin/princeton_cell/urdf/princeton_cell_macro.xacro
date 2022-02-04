@@ -4,10 +4,11 @@
 
     <!-- include files -->
     <xacro:include filename="$(find princeton_cell)/urdf/abb_on_axis_macro.xacro"/>
-    <!-- end include files -->
 
     <link name="world" />
 
+    <!-- -->
+    <!--ROBOT 2-->
     <joint name="r2_world_joint" type="fixed">
       <parent link="world" />
       <child link = "r2_axis" />
@@ -16,6 +17,8 @@
 
     <xacro:abb_on_axis prefix="r2_" />
 
+    <!-- -->
+    <!--ROBOT 1-->
     <joint name="r1_world_joint" type="fixed">
       <parent link="world" />
       <child link = "r1_axis" />

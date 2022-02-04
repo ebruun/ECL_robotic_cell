@@ -3,9 +3,7 @@
 
   <!-- include files -->
   <xacro:include filename="$(find princeton_cell)/urdf/abb_on_axis_macro.xacro"/>
-  <!-- end of include files -->
 
   <!-- parameter defs -->
   <xacro:abb_on_axis prefix="" />
-  <!-- end of parameter defs -->
 </robot>
