@@ -7,12 +7,12 @@
     <link name="${prefix}gripper">
       <visual>
         <geometry>
-          <mesh filename="package://princeton_cell/meshes/visual/gripper.stl"/>
+          <mesh filename="package://abb_irb4600_40_255/meshes/visual/gripper.stl"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://princeton_cell/meshes/collision/gripper.stl"/>
+          <mesh filename="package://abb_irb4600_40_255/meshes/collision/gripper.stl"/>
         </geometry>
       </collision>
     </link>
