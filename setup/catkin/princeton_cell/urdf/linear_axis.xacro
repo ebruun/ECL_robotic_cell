@@ -6,7 +6,6 @@
     <!-- linear axis link list -->
     <link name="${prefix}axis">
       <inertial>
-        <origin xyz="0.0 0.0 0.0"/>
         <mass value="120"/>
         <inertia ixx="-4.98000" iyy="-5.95200" izz="0.82800" ixy="-0.00000" ixz="2.70000" iyz="-0.00000"/>
       </inertial>
@@ -25,7 +24,6 @@
 
     <link name="${prefix}cart">
       <inertial>
-        <origin xyz="0.0 0.0 0.0"/>
         <mass value="120.00000"/>
         <inertia ixx="-4.98000" iyy="-5.95200" izz="0.82800" ixy="-0.00000" ixz="2.70000" iyz="-0.00000"/>
       </inertial>
