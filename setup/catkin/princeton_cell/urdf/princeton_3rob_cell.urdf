@@ -725,7 +725,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="2.012 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb7600_support/meshes/irb7600_150_350/visual/link_4.stl"/>
+        <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_4.stl"/>
       </geometry>
       <material name="">
         <color rgba="0.7372549 0.3490196 0.1607843 1"/>
@@ -734,7 +734,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="2.012 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb7600_support/meshes/irb7600_150_350/collision/link_4.stl"/>
+        <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_4.stl"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>

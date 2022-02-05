@@ -80,14 +80,14 @@
       <visual>
         <origin xyz="2.012 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://abb_irb7600_support/meshes/irb7600_150_350/visual/link_4.stl"/>
+          <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_4.stl"/>
         </geometry>
         <xacro:material_abb_orange />
       </visual>
     <collision>
         <origin xyz="2.012 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://abb_irb7600_support/meshes/irb7600_150_350/collision/link_4.stl"/>
+          <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_4.stl"/>
         </geometry>
         <xacro:material_abb_yellow />
       </collision>
