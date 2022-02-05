@@ -33,7 +33,7 @@
     <joint name="r3_world_joint" type="fixed">
       <parent link="world" />
       <child link = "r3_base_link" />
-      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+      <origin xyz="5.3 1.725 -0.3" rpy="0.0 0.0 3.14159" />
     </joint>
 
     <xacro:abb_irb7600_400_255 prefix="r3_" />
