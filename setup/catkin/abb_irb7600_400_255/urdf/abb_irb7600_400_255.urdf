@@ -115,7 +115,7 @@
   </link>
   <link name="link_4">
     <visual>
-      <origin rpy="0 0 0" xyz="2.012 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_4.stl"/>
       </geometry>
@@ -124,7 +124,7 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="2.012 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_4.stl"/>
       </geometry>
@@ -204,42 +204,42 @@
     <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="1.7453292519943295"/>
   </joint>
   <joint name="joint_2" type="revolute">
-    <origin rpy="0 0 0" xyz="0.410 0 0.780"/>
+    <origin rpy="0 0 0" xyz="0.0 0 0.0"/>
     <parent link="link_1"/>
     <child link="link_2"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-1.0471975511965976" upper="1.4835298641951802" velocity="1.0471975511965976"/>
   </joint>
   <joint name="joint_3" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 1.075"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="link_2"/>
     <child link="link_3"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-3.141592653589793" upper="1.0471975511965976" velocity="1.0471975511965976"/>
   </joint>
   <joint name="joint_4" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0.165"/>
+    <origin rpy="0 0 0" xyz="0 0 0.0"/>
     <parent link="link_3"/>
     <child link="link_4"/>
     <axis xyz="1 0 0"/>
     <limit effort="0" lower="-5.235987755982989" upper="5.235987755982989" velocity="1.7453292519943295"/>
   </joint>
   <joint name="joint_5" type="revolute">
-    <origin rpy="0 0 0" xyz="2.012 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="link_4"/>
     <child link="link_5"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-1.7453292519943295" upper="1.7453292519943295" velocity="1.7453292519943295"/>
   </joint>
   <joint name="joint_6" type="revolute">
-    <origin rpy="0 0 0" xyz="0.250 0 0"/>
+    <origin rpy="0 0 0" xyz="0.0 0 0"/>
     <parent link="link_5"/>
     <child link="link_6"/>
     <axis xyz="1 0 0"/>
     <limit effort="0" lower="-6.283185307179586" upper="6.283185307179586" velocity="3.3161255787892263"/>
   </joint>
   <joint name="joint_balancer_piston" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.380 0 0.6545"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="link_1"/>
     <child link="balancer_piston"/>
   </joint>
