@@ -12,13 +12,13 @@
       </inertial>
       <visual>
         <geometry>
-          <mesh filename="package://princeton_cell/meshes/visual/axis.stl"/>
+          <mesh filename="package://ECL_tracks/meshes/visual/axis.stl"/>
         </geometry>
         <xacro:material_abb_white />
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://princeton_cell/meshes/collision/axis.stl"/>
+          <mesh filename="package://ECL_tracks/meshes/collision/axis.stl"/>
         </geometry>
       </collision>
     </link>
@@ -31,13 +31,13 @@
       </inertial>
       <visual>
         <geometry>
-          <mesh filename="package://princeton_cell/meshes/visual/cart.stl"/>
+          <mesh filename="package://ECL_tracks/meshes/visual/cart.stl"/>
         </geometry>
         <xacro:material_abb_white />
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://princeton_cell/meshes/collision/cart.stl"/>
+          <mesh filename="package://ECL_tracks/meshes/collision/cart.stl"/>
         </geometry>
       </collision>
     </link>

@@ -5,7 +5,7 @@
     <!-- include files -->
     <xacro:include filename="$(find abb_resources)/urdf/common_materials.xacro"/>
     <xacro:include filename="$(find abb_irb4600_40_255)/urdf/abb_irb4600_40_255_macro.xacro"/>
-    <xacro:include filename="$(find princeton_cell)/urdf/linear_axis.xacro"/>
+    <xacro:include filename="$(find ECL_tracks)/urdf/linear_axis.xacro"/>
 
     <!-- parameter defs -->
     <xacro:linear_axis prefix="${prefix}"/>
