@@ -191,47 +191,47 @@
   <joint name="joint_2" type="revolute">
     <parent link="link_1"/>
     <child link="link_2"/>
-    <origin rpy="0 0 0" xyz="0.0 0 0.0"/>
+    <origin rpy="0 0 0" xyz="0.410 0 0.780"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-1.0471975511965976" upper="1.4835298641951802" velocity="1.0471975511965976"/>
   </joint>
   <joint name="joint_3" type="revolute">
     <parent link="link_2"/>
     <child link="link_3"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 1.075"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-3.141592653589793" upper="1.0471975511965976" velocity="1.0471975511965976"/>
   </joint>
   <joint name="joint_4" type="revolute">
     <parent link="link_3"/>
     <child link="link_4"/>
-    <origin rpy="0 0 0" xyz="0 0 0.0"/>
+    <origin rpy="0 0 0" xyz="0.175 0 0"/>
     <axis xyz="1 0 0"/>
     <limit effort="0" lower="-5.235987755982989" upper="5.235987755982989" velocity="1.7453292519943295"/>
   </joint>
   <joint name="joint_5" type="revolute">
     <parent link="link_4"/>
     <child link="link_5"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0.882 0 0"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-1.7453292519943295" upper="1.7453292519943295" velocity="1.7453292519943295"/>
   </joint>
   <joint name="joint_6" type="revolute">
     <parent link="link_5"/>
     <child link="link_6"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0.244 0 0"/>
     <axis xyz="1 0 0"/>
     <limit effort="0" lower="-6.283185307179586" upper="6.283185307179586" velocity="3.3161255787892263"/>
-  </joint>
-  <joint name="joint_balancer_piston" type="fixed">
-    <parent link="link_1"/>
-    <child link="balancer_piston"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
   <joint name="joint_6-tool0" type="fixed">
     <parent link="link_6"/>
     <child link="tool0"/>
-    <origin rpy="0 1.5707963267948966 0" xyz="1.71 0 2.02"/>
+    <origin rpy="0 1.5707963267948966 0" xyz="0 0 0"/>
+  </joint>
+  <joint name="joint_balancer_piston" type="fixed">
+    <parent link="link_1"/>
+    <child link="balancer_piston"/>
+    <origin rpy="0 0 0" xyz="-0.378 0 0.654"/>
   </joint>
   <!-- -->
   <!-- ROS-Industrial 'base' frame: base_link to ABB World Coordinates transform -->
