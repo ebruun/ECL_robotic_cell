@@ -15,8 +15,8 @@ services:
       - /root/catkin_ws/scripts/main.launch
       - rrc:=true
       - gui:=true
-      - robot_ip_4600:=192.168.0.102
-      - robot_ip_7600:=192.168.0.103
+      - robot_ip_4600:=192.168.0.102 # WAN port, Ethernet Switch
+      - robot_ip_7600:=192.168.0.103 # WAN port, Ethernet Switch
     volumes:
       - ./scripts:/root/catkin_ws/scripts
       - ./../../setup/catkin/abb_irb4600_40_255:/root/catkin_ws/src/abb_irb4600_40_255
