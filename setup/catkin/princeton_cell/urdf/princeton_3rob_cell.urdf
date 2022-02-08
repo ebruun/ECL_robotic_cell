@@ -98,9 +98,9 @@
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
   <joint name="r1_tcp_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0.352"/>
     <parent link="r1_gripper"/>
     <child link="r1_tcp"/>
+    <origin rpy="0 0 0" xyz="0 0 0.352"/>
   </joint>
   <!-- IRB4600 -->
   <!-- irb4600 link list -->
@@ -273,7 +273,7 @@
   <joint name="r1_joint_4" type="revolute">
     <parent link="r1_link_3"/>
     <child link="r1_link_4"/>
-    <origin rpy="0 -0 0 " xyz="0.332 0 0.175"/>
+    <origin rpy="0 0 0 " xyz="0.332 0 0.175"/>
     <axis xyz="1 0 0"/>
     <limit effort="10000" lower="-6.98132" upper="6.98132" velocity="6.2832"/>
     <dynamics damping="0.2" friction="0"/>
@@ -281,7 +281,7 @@
   <joint name="r1_joint_5" type="revolute">
     <parent link="r1_link_4"/>
     <child link="r1_link_5"/>
-    <origin rpy="0 -0 0 " xyz="0.939 0 0"/>
+    <origin rpy="0 0 0 " xyz="0.939 0 0"/>
     <axis xyz="0 1 0"/>
     <limit effort="100000" lower="-2.18166" upper="2.0944" velocity="6.2832"/>
     <dynamics damping="0.2" friction="0"/>
@@ -289,23 +289,23 @@
   <joint name="r1_joint_6" type="revolute">
     <parent link="r1_link_5"/>
     <child link="r1_link_6"/>
-    <origin rpy="0 1.57076 0 " xyz="0.135 0 0"/>
-    <axis xyz="0 0 1"/>
+    <origin rpy="0 0 0 " xyz="0.135 0 0"/>
+    <axis xyz="1 0 0"/>
     <limit effort="100000" lower="-6.98132" upper="6.98132" velocity="7.854"/>
     <dynamics damping="0.2" friction="0"/>
   </joint>
   <joint name="r1_joint_6-tool0" type="fixed">
     <parent link="r1_link_6"/>
     <child link="r1_tool0"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 1.5707963267948966 0" xyz="0 0 0"/>
   </joint>
   <!-- -->
   <!-- IRB4600 base_link to ABB World Coordinates transform -->
   <link name="r1_base"/>
   <joint name="r1_base_link-base" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="r1_base_link"/>
     <child link="r1_base"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
   <!-- -->
   <!--ROBOT 2-->
@@ -398,9 +398,9 @@
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
   <joint name="r2_tcp_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0.352"/>
     <parent link="r2_gripper"/>
     <child link="r2_tcp"/>
+    <origin rpy="0 0 0" xyz="0 0 0.352"/>
   </joint>
   <!-- IRB4600 -->
   <!-- irb4600 link list -->
@@ -573,7 +573,7 @@
   <joint name="r2_joint_4" type="revolute">
     <parent link="r2_link_3"/>
     <child link="r2_link_4"/>
-    <origin rpy="0 -0 0 " xyz="0.332 0 0.175"/>
+    <origin rpy="0 0 0 " xyz="0.332 0 0.175"/>
     <axis xyz="1 0 0"/>
     <limit effort="10000" lower="-6.98132" upper="6.98132" velocity="6.2832"/>
     <dynamics damping="0.2" friction="0"/>
@@ -581,7 +581,7 @@
   <joint name="r2_joint_5" type="revolute">
     <parent link="r2_link_4"/>
     <child link="r2_link_5"/>
-    <origin rpy="0 -0 0 " xyz="0.939 0 0"/>
+    <origin rpy="0 0 0 " xyz="0.939 0 0"/>
     <axis xyz="0 1 0"/>
     <limit effort="100000" lower="-2.18166" upper="2.0944" velocity="6.2832"/>
     <dynamics damping="0.2" friction="0"/>
@@ -589,30 +589,30 @@
   <joint name="r2_joint_6" type="revolute">
     <parent link="r2_link_5"/>
     <child link="r2_link_6"/>
-    <origin rpy="0 1.57076 0 " xyz="0.135 0 0"/>
-    <axis xyz="0 0 1"/>
+    <origin rpy="0 0 0 " xyz="0.135 0 0"/>
+    <axis xyz="1 0 0"/>
     <limit effort="100000" lower="-6.98132" upper="6.98132" velocity="7.854"/>
     <dynamics damping="0.2" friction="0"/>
   </joint>
   <joint name="r2_joint_6-tool0" type="fixed">
     <parent link="r2_link_6"/>
     <child link="r2_tool0"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 1.5707963267948966 0" xyz="0 0 0"/>
   </joint>
   <!-- -->
   <!-- IRB4600 base_link to ABB World Coordinates transform -->
   <link name="r2_base"/>
   <joint name="r2_base_link-base" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="r2_base_link"/>
     <child link="r2_base"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
   <!-- -->
   <!--ROBOT 3-->
   <joint name="r3_world_joint" type="fixed">
     <parent link="world"/>
     <child link="r3_base_link"/>
-    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <origin rpy="0.0 0.0 3.14159" xyz="5.3 1.725 -0.3"/>
   </joint>
   <!-- GRIPPER -->
   <!-- gripper link list -->
@@ -636,15 +636,14 @@
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
   <joint name="r3_tcp_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0.352"/>
     <parent link="r3_gripper"/>
     <child link="r3_tcp"/>
+    <origin rpy="0 0 0" xyz="0 0 0.352"/>
   </joint>
   <!-- IRB7600-->
   <!-- irb7600 link list -->
   <link name="r3_base_link">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/visual/base_link.stl"/>
       </geometry>
@@ -663,7 +662,6 @@
   </link>
   <link name="r3_link_1">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_1.stl"/>
       </geometry>
@@ -672,7 +670,6 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_1.stl"/>
       </geometry>
@@ -683,7 +680,6 @@
   </link>
   <link name="r3_link_2">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_2.stl"/>
       </geometry>
@@ -692,7 +688,6 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_2.stl"/>
       </geometry>
@@ -703,7 +698,6 @@
   </link>
   <link name="r3_link_3">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_3.stl"/>
       </geometry>
@@ -712,7 +706,6 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_3.stl"/>
       </geometry>
@@ -723,18 +716,16 @@
   </link>
   <link name="r3_link_4">
     <visual>
-      <origin rpy="0 0 0" xyz="2.012 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb7600_support/meshes/irb7600_150_350/visual/link_4.stl"/>
+        <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_4.stl"/>
       </geometry>
       <material name="">
         <color rgba="0.7372549 0.3490196 0.1607843 1"/>
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="2.012 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb7600_support/meshes/irb7600_150_350/collision/link_4.stl"/>
+        <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_4.stl"/>
       </geometry>
       <material name="">
         <color rgba="1 1 0 1"/>
@@ -743,7 +734,6 @@
   </link>
   <link name="r3_link_5">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_5.stl"/>
       </geometry>
@@ -752,7 +742,6 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_5.stl"/>
       </geometry>
@@ -763,7 +752,6 @@
   </link>
   <link name="r3_link_6">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_6.stl"/>
       </geometry>
@@ -772,7 +760,6 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_6.stl"/>
       </geometry>
@@ -783,7 +770,6 @@
   </link>
   <link name="r3_balancer_piston">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/visual/balancer_piston.stl"/>
       </geometry>
@@ -792,7 +778,6 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/collision/balancer_piston.stl"/>
       </geometry>
@@ -805,63 +790,63 @@
   <!-- end of link list -->
   <!-- joint list -->
   <joint name="r3_joint_1" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="r3_base_link"/>
     <child link="r3_link_1"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
     <axis xyz="0 0 1"/>
     <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="1.7453292519943295"/>
   </joint>
   <joint name="r3_joint_2" type="revolute">
-    <origin rpy="0 0 0" xyz="0.410 0 0.780"/>
     <parent link="r3_link_1"/>
     <child link="r3_link_2"/>
+    <origin rpy="0 0 0" xyz="0.410 0 0.780"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-1.0471975511965976" upper="1.4835298641951802" velocity="1.0471975511965976"/>
   </joint>
   <joint name="r3_joint_3" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 1.075"/>
     <parent link="r3_link_2"/>
     <child link="r3_link_3"/>
+    <origin rpy="0 0 0" xyz="0 0 1.075"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-3.141592653589793" upper="1.0471975511965976" velocity="1.0471975511965976"/>
   </joint>
   <joint name="r3_joint_4" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0.165"/>
     <parent link="r3_link_3"/>
     <child link="r3_link_4"/>
+    <origin rpy="0 0 0" xyz="0.175 0 0"/>
     <axis xyz="1 0 0"/>
     <limit effort="0" lower="-5.235987755982989" upper="5.235987755982989" velocity="1.7453292519943295"/>
   </joint>
   <joint name="r3_joint_5" type="revolute">
-    <origin rpy="0 0 0" xyz="2.012 0 0"/>
     <parent link="r3_link_4"/>
     <child link="r3_link_5"/>
+    <origin rpy="0 0 0" xyz="0.882 0 0"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-1.7453292519943295" upper="1.7453292519943295" velocity="1.7453292519943295"/>
   </joint>
   <joint name="r3_joint_6" type="revolute">
-    <origin rpy="0 0 0" xyz="0.250 0 0"/>
     <parent link="r3_link_5"/>
     <child link="r3_link_6"/>
+    <origin rpy="0 0 0" xyz="0.244 0 0"/>
     <axis xyz="1 0 0"/>
     <limit effort="0" lower="-6.283185307179586" upper="6.283185307179586" velocity="3.3161255787892263"/>
   </joint>
-  <joint name="r3_joint_balancer_piston" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.380 0 0.6545"/>
-    <parent link="r3_link_1"/>
-    <child link="r3_balancer_piston"/>
-  </joint>
   <joint name="r3_joint_6-tool0" type="fixed">
-    <origin rpy="0 1.5707963267948966 0" xyz="0 0 0"/>
     <parent link="r3_link_6"/>
     <child link="r3_tool0"/>
+    <origin rpy="0 1.5707963267948966 0" xyz="0 0 0"/>
+  </joint>
+  <joint name="r3_joint_balancer_piston" type="fixed">
+    <parent link="r3_link_1"/>
+    <child link="r3_balancer_piston"/>
+    <origin rpy="0 0 0" xyz="-0.378 0 0.654"/>
   </joint>
   <!-- -->
   <!-- ROS-Industrial 'base' frame: base_link to ABB World Coordinates transform -->
   <link name="r3_base"/>
   <joint name="r3_base_link-base" type="fixed">
-    <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="r3_base_link"/>
     <child link="r3_base"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
 </robot>
