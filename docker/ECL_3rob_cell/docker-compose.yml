@@ -1,11 +1,11 @@
 version: '2'
 services:
-  createlab:
+  ECL_3rob:
     image: gramaziokohler/ros-createlab
     container_name: ECL_3rob
     environment:
       - ROS_HOSTNAME=ECL_3rob
-      - ROS_MASTER_URI=http://createlab:11311
+      - ROS_MASTER_URI=http://ECL_3rob:11311
       - ROS_LANG_DISABLE=genlisp:gennodejs:geneus
       - DISPLAY=host.docker.internal:0.0
     ports:
@@ -15,6 +15,8 @@ services:
       - /root/catkin_ws/scripts/main.launch
       - rrc:=true
       - gui:=true
+      - robot_ip_4600:=192.168.0.102
+      - robot_ip_7600:=192.168.0.103
     volumes:
       - ./scripts:/root/catkin_ws/scripts
       - ./../../setup/catkin/abb_irb4600_40_255:/root/catkin_ws/src/abb_irb4600_40_255
