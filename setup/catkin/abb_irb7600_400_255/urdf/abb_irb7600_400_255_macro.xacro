@@ -104,13 +104,13 @@
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_6.stl"/>
         </geometry>
-        <xacro:material_abb_black />
+        <xacro:material_abb_orange />
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_6.stl"/>
         </geometry>
-        <xacro:material_abb_black />
+        <xacro:material_abb_yellow />
       </collision>
     </link>
 

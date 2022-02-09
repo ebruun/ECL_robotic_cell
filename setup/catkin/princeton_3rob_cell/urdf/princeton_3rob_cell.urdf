@@ -83,11 +83,17 @@
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/gripper.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="1 1 0 1"/>
+      </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/gripper.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="1 1 0 1"/>
+      </material>
     </collision>
   </link>
   <link name="r1_tcp"/>
@@ -238,7 +244,7 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_6.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.1882353 0.1960784 0.2039216 1"/>
+        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
       </material>
     </visual>
     <collision>
@@ -386,11 +392,17 @@
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/gripper.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="1 1 0 1"/>
+      </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/gripper.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="1 1 0 1"/>
+      </material>
     </collision>
   </link>
   <link name="r2_tcp"/>
@@ -541,7 +553,7 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_6.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.1882353 0.1960784 0.2039216 1"/>
+        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
       </material>
     </visual>
     <collision>
@@ -628,10 +640,16 @@
         <mesh filename="package://abb_irb7600_400_255/meshes/visual/gripper.stl"/>
       </geometry>
     </visual>
+    <material name="">
+      <color rgba="1 1 0 1"/>
+    </material>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/collision/gripper.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="1 1 0 1"/>
+      </material>
     </collision>
   </link>
   <link name="r3_tcp"/>
@@ -762,7 +780,7 @@
         <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_6.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.1882353 0.1960784 0.2039216 1"/>
+        <color rgba="0.7372549 0.3490196 0.1607843 1"/>
       </material>
     </visual>
     <collision>
@@ -770,7 +788,7 @@
         <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_6.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.1882353 0.1960784 0.2039216 1"/>
+        <color rgba="1 1 0 1"/>
       </material>
     </collision>
   </link>
