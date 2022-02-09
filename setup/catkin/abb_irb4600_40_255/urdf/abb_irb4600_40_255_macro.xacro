@@ -149,7 +149,7 @@
       <child  link="${prefix}link_1"/>
       <origin xyz="0 0 0" rpy="0 0 0 "/>
       <axis   xyz="0 0 1"/>
-      <limit lower="-${radians(180)}" upper="-${radians(180)}" effort="100000" velocity="2.618" />
+      <limit lower="-${radians(180)}" upper="${radians(180)}" effort="100000" velocity="2.618" />
       <dynamics damping="0.2" friction="0" />
     </joint>
 

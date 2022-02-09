@@ -249,7 +249,7 @@
     <child link="r1_link_1"/>
     <origin rpy="0 0 0 " xyz="0 0 0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="100000" lower="-3.141592653589793" upper="-3.141592653589793" velocity="2.618"/>
+    <limit effort="100000" lower="-3.141592653589793" upper="3.141592653589793" velocity="2.618"/>
     <dynamics damping="0.2" friction="0"/>
   </joint>
   <joint name="r1_joint_2" type="revolute">
@@ -549,7 +549,7 @@
     <child link="r2_link_1"/>
     <origin rpy="0 0 0 " xyz="0 0 0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="100000" lower="-3.141592653589793" upper="-3.141592653589793" velocity="2.618"/>
+    <limit effort="100000" lower="-3.141592653589793" upper="3.141592653589793" velocity="2.618"/>
     <dynamics damping="0.2" friction="0"/>
   </joint>
   <joint name="r2_joint_2" type="revolute">
