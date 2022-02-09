@@ -12,13 +12,13 @@
       </inertial>
       <visual>
         <geometry>
-          <mesh filename="package://ECL_tracks/meshes/visual/axis.stl"/>
+          <mesh filename="package://abb_on_axis/meshes/visual/axis.stl"/>
         </geometry>
         <xacro:material_abb_white />
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://ECL_tracks/meshes/collision/axis.stl"/>
+          <mesh filename="package://abb_on_axis/meshes/collision/axis.stl"/>
         </geometry>
       </collision>
     </link>
@@ -31,13 +31,13 @@
       </inertial>
       <visual>
         <geometry>
-          <mesh filename="package://ECL_tracks/meshes/visual/cart.stl"/>
+          <mesh filename="package://abb_on_axis/meshes/visual/cart.stl"/>
         </geometry>
         <xacro:material_abb_white />
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://ECL_tracks/meshes/collision/cart.stl"/>
+          <mesh filename="package://abb_on_axis/meshes/collision/cart.stl"/>
         </geometry>
       </collision>
     </link>

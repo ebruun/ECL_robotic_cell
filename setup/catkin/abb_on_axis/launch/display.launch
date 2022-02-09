@@ -1,8 +1,8 @@
 <launch>
 
-  <arg name="model" default="$(find ECL_tracks)/urdf/abb_on_axis.urdf"/>
+  <arg name="model" default="$(find abb_on_axis)/urdf/abb_on_axis.urdf"/>
   <arg name="gui" default="true" />
-  <arg name="rvizconfig" default="$(find ECL_tracks)/rviz/urdf.rviz" />
+  <arg name="rvizconfig" default="$(find abb_on_axis)/rviz/urdf.rviz" />
 
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />
   <param name="use_gui" value="$(arg gui)"/>

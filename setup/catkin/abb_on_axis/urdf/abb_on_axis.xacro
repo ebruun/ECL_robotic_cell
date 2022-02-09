@@ -2,7 +2,7 @@
 <robot name="abb_on_axis" xmlns:xacro="http://wiki.ros.org/xacro">
 
   <!-- include files -->
-  <xacro:include filename="$(find ECL_tracks)/urdf/abb_on_axis_macro.xacro"/>
+  <xacro:include filename="$(find abb_on_axis)/urdf/abb_on_axis_macro.xacro"/>
 
   <!-- parameter defs -->
   <xacro:abb_on_axis prefix="" />

@@ -4,7 +4,7 @@
 
     <!-- include files -->
     <xacro:include filename="$(find abb_irb7600_400_255)/urdf/abb_irb7600_400_255_macro.xacro"/>
-    <xacro:include filename="$(find ECL_tracks)/urdf/abb_on_axis_macro.xacro"/>
+    <xacro:include filename="$(find abb_on_axis)/urdf/abb_on_axis_macro.xacro"/>
 
     <link name="world" />
 

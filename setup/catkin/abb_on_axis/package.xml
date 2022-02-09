@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ECL_tracks</name>
+  <name>abb_on_axis</name>
   <version>0.0.0</version>
-  <description>The ECL_tracks package</description>
+  <description>The abb_on_axis package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->

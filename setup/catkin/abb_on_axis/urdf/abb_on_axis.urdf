@@ -18,7 +18,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://ECL_tracks/meshes/visual/axis.stl"/>
+        <mesh filename="package://abb_on_axis/meshes/visual/axis.stl"/>
       </geometry>
       <material name="">
         <color rgba="0.9254902 0.9254902 0.9058824 1"/>
@@ -26,7 +26,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ECL_tracks/meshes/collision/axis.stl"/>
+        <mesh filename="package://abb_on_axis/meshes/collision/axis.stl"/>
       </geometry>
     </collision>
   </link>
@@ -38,7 +38,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://ECL_tracks/meshes/visual/cart.stl"/>
+        <mesh filename="package://abb_on_axis/meshes/visual/cart.stl"/>
       </geometry>
       <material name="">
         <color rgba="0.9254902 0.9254902 0.9058824 1"/>
@@ -46,7 +46,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ECL_tracks/meshes/collision/cart.stl"/>
+        <mesh filename="package://abb_on_axis/meshes/collision/cart.stl"/>
       </geometry>
     </collision>
   </link>
@@ -241,7 +241,7 @@
     <child link="link_1"/>
     <origin rpy="0 0 0 " xyz="0 0 0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="100000" lower="-3.141592653589793" upper="-3.141592653589793" velocity="2.618"/>
+    <limit effort="100000" lower="-3.141592653589793" upper="3.141592653589793" velocity="2.618"/>
     <dynamics damping="0.2" friction="0"/>
   </joint>
   <joint name="joint_2" type="revolute">
