@@ -21,6 +21,7 @@ RUN echo "Building catkin workspace" \
     # Update apt-get because its cache is always cleared after installs to keep image size down
     && apt-get update && apt-get -y upgrade \
     # Some additional dependencies missing
+    && yolo \
     && apt-get install ros-${ROS_DISTRO}-robot-state-publisher ros-${ROS_DISTRO}-joint-state-publisher -y \
     # RRC packages
     && git clone https://github.com/compas-rrc/compas_rrc_ros.git \

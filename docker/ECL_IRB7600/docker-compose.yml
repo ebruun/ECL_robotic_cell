@@ -13,11 +13,11 @@ services:
     command:
       - roslaunch
       - /root/catkin_ws/scripts/main.launch
-      - rrc:=true
+      - rrc:=false
       - gui:=true
       - robot_ip:=192.168.0.103 # WAN port, Ethernet Switch
     volumes:
       - ./scripts:/root/catkin_ws/scripts
       - ./../../setup/catkin/abb_irb7600_400_255:/root/catkin_ws/src/abb_irb7600_400_255
-      - ./../../setup/catkin/princeton_cell:/root/catkin_ws/src/princeton_cell
-      - ./../../setup/catkin/princeton_cell_moveit:/root/catkin_ws/src/princeton_cell_moveit
+      - ./../../setup/catkin/abb_resources:/root/catkin_ws/src/abb_resources
+      - ./../../setup/catkin/moveit_irb7600:/root/catkin_ws/src/moveit_irb7600
