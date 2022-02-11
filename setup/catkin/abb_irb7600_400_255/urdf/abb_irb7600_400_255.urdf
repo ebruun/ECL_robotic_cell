@@ -13,10 +13,10 @@
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/visual/gripper.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="1.0 0.8 0.796078431372549 1"/>
+      </material>
     </visual>
-    <material name="">
-      <color rgba="1.0 0.8 0.796078431372549 1"/>
-    </material>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb7600_400_255/meshes/collision/gripper.stl"/>
