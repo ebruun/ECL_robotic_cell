@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: princeton_3rob_cell
+    relative_path: urdf/princeton_3rob_cell.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/princeton_3rob_cell.srdf
+  CONFIG:
+    author_name: Edvard Bruun
+    author_email: ebruun@princeton.edu
+    generated_timestamp: 1644596465
