@@ -14,13 +14,13 @@
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/visual/base_link.stl"/>
         </geometry>
-        <xacro:material_abb_orange />
+        <xacro:material_abb_gray_white/>
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/collision/base_link.stl"/>
         </geometry>
-        <xacro:material_abb_orange />
+        <xacro:material_abb_gray_white/>
       </collision>
     </link>
 
@@ -29,13 +29,13 @@
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_1.stl"/>
         </geometry>
-        <xacro:material_abb_orange />
+        <xacro:material_abb_gray_white/>
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_1.stl"/>
         </geometry>
-        <xacro:material_abb_yellow />
+        <xacro:material_abb_gray_white/>
       </collision>
     </link>
 
@@ -44,13 +44,13 @@
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_2.stl"/>
         </geometry>
-        <xacro:material_abb_orange />
+        <xacro:material_abb_gray_white/>
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_2.stl"/>
         </geometry>
-        <xacro:material_abb_yellow />
+        <xacro:material_abb_gray_white/>
       </collision>
     </link>
 
@@ -59,13 +59,13 @@
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_3.stl"/>
         </geometry>
-        <xacro:material_abb_orange />
+        <xacro:material_abb_gray_white/>
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_3.stl"/>
         </geometry>
-        <xacro:material_abb_yellow />
+        <xacro:material_abb_gray_white/>
       </collision>
     </link>
 
@@ -74,13 +74,13 @@
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_4.stl"/>
         </geometry>
-        <xacro:material_abb_orange />
+        <xacro:material_abb_gray_white/>
       </visual>
     <collision>
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_4.stl"/>
         </geometry>
-        <xacro:material_abb_yellow />
+        <xacro:material_abb_gray_white/>
       </collision>
     </link>
 
@@ -89,13 +89,13 @@
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_5.stl"/>
         </geometry>
-        <xacro:material_abb_orange />
+        <xacro:material_abb_gray_white/>
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_5.stl"/>
         </geometry>
-        <xacro:material_abb_yellow />
+        <xacro:material_abb_gray_white/>
       </collision>
     </link>
 
@@ -104,13 +104,13 @@
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/visual/link_6.stl"/>
         </geometry>
-        <xacro:material_abb_orange />
+        <xacro:material_abb_gray_white/>
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/collision/link_6.stl"/>
         </geometry>
-        <xacro:material_abb_yellow />
+        <xacro:material_abb_gray_white/>
       </collision>
     </link>
 
@@ -119,13 +119,13 @@
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/visual/balancer_piston.stl"/>
         </geometry>
-        <xacro:material_abb_orange />
+        <xacro:material_abb_gray_white/>
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://abb_irb7600_400_255/meshes/collision/balancer_piston.stl"/>
         </geometry>
-        <xacro:material_abb_yellow />
+        <xacro:material_abb_gray_white/>
       </collision>
     </link>
 

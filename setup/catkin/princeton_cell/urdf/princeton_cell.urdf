@@ -29,13 +29,16 @@
         <mesh filename="package://abb_on_axis/meshes/visual/axis.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.9254902 0.9254902 0.9058824 1"/>
+        <color rgba="0.7058823 0.6901961 0.6313725 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_on_axis/meshes/collision/axis.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.7058823 0.6901961 0.6313725 1"/>
+      </material>
     </collision>
   </link>
   <link name="r1_cart">
@@ -49,13 +52,16 @@
         <mesh filename="package://abb_on_axis/meshes/visual/cart.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.9254902 0.9254902 0.9058824 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_on_axis/meshes/collision/cart.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <!-- linear axis joint list -->
@@ -82,7 +88,7 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/gripper.stl"/>
       </geometry>
       <material name="">
-        <color rgba="1 1 0 1"/>
+        <color rgba="1.0 0.8 0.796078431372549 1"/>
       </material>
     </visual>
     <collision>
@@ -90,7 +96,7 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/gripper.stl"/>
       </geometry>
       <material name="">
-        <color rgba="1 1 0 1"/>
+        <color rgba="1.0 0.8 0.796078431372549 1"/>
       </material>
     </collision>
   </link>
@@ -119,7 +125,7 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/base_link.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.9254902 0.9254902 0.9058824 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
@@ -127,7 +133,7 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/base_link.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.9254902 0.9254902 0.9058824 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </collision>
   </link>
@@ -142,13 +148,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_1.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_1.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r1_link_2">
@@ -162,13 +171,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_2.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_2.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r1_link_3">
@@ -182,13 +194,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_3.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_3.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r1_link_4">
@@ -202,13 +217,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_4.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_4.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r1_link_5">
@@ -222,13 +240,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_5.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_5.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r1_link_6">
@@ -242,13 +263,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_6.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_6.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r1_tool0"/>
@@ -338,13 +362,16 @@
         <mesh filename="package://abb_on_axis/meshes/visual/axis.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.9254902 0.9254902 0.9058824 1"/>
+        <color rgba="0.7058823 0.6901961 0.6313725 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_on_axis/meshes/collision/axis.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.7058823 0.6901961 0.6313725 1"/>
+      </material>
     </collision>
   </link>
   <link name="r2_cart">
@@ -358,13 +385,16 @@
         <mesh filename="package://abb_on_axis/meshes/visual/cart.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.9254902 0.9254902 0.9058824 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_on_axis/meshes/collision/cart.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <!-- linear axis joint list -->
@@ -391,7 +421,7 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/gripper.stl"/>
       </geometry>
       <material name="">
-        <color rgba="1 1 0 1"/>
+        <color rgba="1.0 0.8 0.796078431372549 1"/>
       </material>
     </visual>
     <collision>
@@ -399,7 +429,7 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/gripper.stl"/>
       </geometry>
       <material name="">
-        <color rgba="1 1 0 1"/>
+        <color rgba="1.0 0.8 0.796078431372549 1"/>
       </material>
     </collision>
   </link>
@@ -428,7 +458,7 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/base_link.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.9254902 0.9254902 0.9058824 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
@@ -436,7 +466,7 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/base_link.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.9254902 0.9254902 0.9058824 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </collision>
   </link>
@@ -451,13 +481,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_1.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_1.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r2_link_2">
@@ -471,13 +504,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_2.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_2.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r2_link_3">
@@ -491,13 +527,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_3.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_3.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r2_link_4">
@@ -511,13 +550,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_4.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_4.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r2_link_5">
@@ -531,13 +573,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_5.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_5.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r2_link_6">
@@ -551,13 +596,16 @@
         <mesh filename="package://abb_irb4600_40_255/meshes/visual/link_6.stl"/>
       </geometry>
       <material name="">
-        <color rgba="0.7725490 0.7803922 0.7686275 1"/>
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
         <mesh filename="package://abb_irb4600_40_255/meshes/collision/link_6.stl"/>
       </geometry>
+      <material name="">
+        <color rgba="0.8392157 0.8352941 0.7921569 1"/>
+      </material>
     </collision>
   </link>
   <link name="r2_tool0"/>

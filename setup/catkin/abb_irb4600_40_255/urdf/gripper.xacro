@@ -9,13 +9,13 @@
         <geometry>
           <mesh filename="package://abb_irb4600_40_255/meshes/visual/gripper.stl"/>
         </geometry>
-        <xacro:material_abb_yellow />
+        <xacro:material_light_pink />
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://abb_irb4600_40_255/meshes/collision/gripper.stl"/>
         </geometry>
-        <xacro:material_abb_yellow />
+        <xacro:material_light_pink />
       </collision>
     </link>
 

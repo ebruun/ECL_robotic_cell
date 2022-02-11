@@ -14,12 +14,13 @@
         <geometry>
           <mesh filename="package://abb_on_axis/meshes/visual/axis.stl"/>
         </geometry>
-        <xacro:material_abb_white />
+        <xacro:material_abb_pebble_gray />
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://abb_on_axis/meshes/collision/axis.stl"/>
         </geometry>
+        <xacro:material_abb_pebble_gray />
       </collision>
     </link>
 
@@ -33,12 +34,13 @@
         <geometry>
           <mesh filename="package://abb_on_axis/meshes/visual/cart.stl"/>
         </geometry>
-        <xacro:material_abb_white />
+        <xacro:material_abb_gray_white />
       </visual>
       <collision>
         <geometry>
           <mesh filename="package://abb_on_axis/meshes/collision/cart.stl"/>
         </geometry>
+        <xacro:material_abb_gray_white />
       </collision>
     </link>
 

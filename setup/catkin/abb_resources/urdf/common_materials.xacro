@@ -92,4 +92,10 @@
     </material>
   </xacro:macro>
 
+  <xacro:macro name="material_light_pink">
+    <material name="">
+      <color rgba="${colour_light_pink}"/>
+    </material>
+  </xacro:macro>
+
 </robot>
