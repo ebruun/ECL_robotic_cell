@@ -1,6 +1,6 @@
 # ECL_robotic_cell
 
-Robotic cell setup in Princeton ECL:
+## Robotic cell setup in Princeton ECL:
 * 2 x IRB4600/2.55 on 3.9m tracks
 * 1 x IRB7600 stationary
 
@@ -31,3 +31,29 @@ IP Addresses:
 7600: 192.168.0.103
 PC: 192.168.0.101
 Default Gateway: 192.168.0.254
+
+## Docker
+Compose up on any of the three docker setups available:
+* ECL_2rob_cell (both 4600s on tracks)
+* ECL_3rob_cell (7600 and 4600s on tracks)
+* ECL_IRB7600 (single 7600 robot)
+
+This should allow you to work with any of these setups, to do path planning and to send commands through RRC.
+
+
+## Windows and ROS
+
+Generating xacros and moveit files with Ubuntu running on Windows. 
+
+* Using windows terminal: https://docs.microsoft.com/en-us/windows/terminal/install
+* Ubuntu 20.04 through WSL: https://docs.microsoft.com/en-us/windows/wsl/install
+* ROS on Linux through COMPAS Fab documentation: https://gramaziokohler.github.io/compas_fab/latest/backends/ros.html
+* Creating URDF from xacro files: https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/07_ros_create_urdf_ur5_with_measurement_tool.html
+* Creating Moveit Packge: https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/08_ros_create_moveit_package_from_custom_urdf.html
+    * currently the latest version on moveit is generating config files that do not work with the docker images. Generate files in a format that match the current setups (manual edit, time consuming...)
+* To use tools in Linux that have GUI (i.e., moveit setup installer) need to have some visualization software running:
+    * VcXsrv: https://sourceforge.net/projects/vcxsrv/
+    * Some settings: https://turlucode.com/running-ros-inside-windows-10-with-gui-support-wsl/
+    * found that display should be set to 0.0 and not 0
+
+Basically work in Linux (through WSL), and then copy files that are generated over to location on local windows system

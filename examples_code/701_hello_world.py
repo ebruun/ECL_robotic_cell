@@ -7,7 +7,7 @@ if __name__ == '__main__':
     ros.run()
 
     # Create ABB Client
-    abb = rrc.AbbClient(ros, '/rob2')
+    abb = rrc.AbbClient(ros, '/rob3')
     print('Connected.')
 
     # Print text on FlexPenant
