@@ -31,7 +31,7 @@
     <joint name="${prefix}tcp_joint" type="fixed">
       <parent link="${prefix}gripper"/>
       <child link="${prefix}tcp"/>
-      <origin xyz="0 0 0.352" rpy="0 0 0"/>
+      <origin xyz="0 0 0.1830" rpy="0 0 0"/>
     </joint>
 
   </xacro:macro>

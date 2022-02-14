@@ -710,7 +710,7 @@
   <joint name="r3_tcp_joint" type="fixed">
     <parent link="r3_gripper"/>
     <child link="r3_tcp"/>
-    <origin rpy="0 0 0" xyz="0 0 0.352"/>
+    <origin rpy="0 0 0" xyz="0 0 0.1830"/>
   </joint>
   <!-- IRB7600-->
   <!-- irb7600 link list -->
