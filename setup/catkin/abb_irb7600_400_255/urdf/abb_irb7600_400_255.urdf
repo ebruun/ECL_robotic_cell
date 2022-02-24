@@ -36,7 +36,7 @@
   <joint name="tcp_joint" type="fixed">
     <parent link="gripper"/>
     <child link="tcp"/>
-    <origin rpy="0 0 0" xyz="0 0 0.1830"/>
+    <origin rpy="0 0 0" xyz="0 0 0.2153"/>
   </joint>
   <!-- IRB7600-->
   <!-- irb7600 link list -->
@@ -225,7 +225,7 @@
   <joint name="joint_6" type="revolute">
     <parent link="link_5"/>
     <child link="link_6"/>
-    <origin rpy="0 0 0" xyz="0.2435 0 0"/>
+    <origin rpy="0 0 0" xyz="0.2490 0 0"/>
     <axis xyz="1 0 0"/>
     <limit effort="0" lower="-6.283185307179586" upper="6.283185307179586" velocity="3.3161255787892263"/>
   </joint>
