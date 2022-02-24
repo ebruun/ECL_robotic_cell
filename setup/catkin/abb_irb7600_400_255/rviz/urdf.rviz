@@ -64,6 +64,11 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        balancer_piston:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         base:
           Alpha: 1
           Show Axes: false
@@ -127,6 +132,8 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        balancer_piston:
+          Value: true
         base:
           Value: true
         base_link:
@@ -160,6 +167,8 @@ Visualization Manager:
           base:
             {}
           link_1:
+            balancer_piston:
+              {}
             link_2:
               link_3:
                 link_4:
@@ -199,7 +208,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 4.8604416847229
+      Distance: 3.6134281158447266
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -207,17 +216,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.783860445022583
-        Y: -0.15826834738254547
-        Z: 0.8353602290153503
+        X: 0.7931935787200928
+        Y: -0.3777199387550354
+        Z: 0.8499853014945984
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6003960371017456
+      Pitch: 0.740395724773407
       Target Frame: <Fixed Frame>
-      Yaw: 2.168577194213867
+      Yaw: 1.9335765838623047
     Saved: ~
 Window Geometry:
   Displays:

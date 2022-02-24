@@ -51,3 +51,7 @@ Generating xacros and moveit files with Ubuntu running on Windows.
     * found that display should be set to 0.0 and not 0
 
 Basically work in Linux (through WSL), and then copy files that are generated over to location on local windows system
+
+To check URDFs:
+* roslaunch NAME display.launch, to see the URDF links (based on rviz config files saved in folders)
+* can also check the meshes and links with the grasshopper URDF visualize scripts

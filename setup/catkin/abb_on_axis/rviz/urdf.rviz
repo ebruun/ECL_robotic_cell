@@ -64,11 +64,21 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        axis:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         base:
           Alpha: 1
           Show Axes: false
           Show Trail: false
         base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        cart:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -127,9 +137,13 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        axis:
+          Value: true
         base:
           Value: true
         base_link:
+          Value: true
+        cart:
           Value: true
         gripper:
           Value: true
@@ -156,19 +170,21 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        base_link:
-          base:
-            {}
-          link_1:
-            link_2:
-              link_3:
-                link_4:
-                  link_5:
-                    link_6:
-                      tool0:
-                        gripper:
-                          tcp:
-                            {}
+        axis:
+          cart:
+            base_link:
+              base:
+                {}
+              link_1:
+                link_2:
+                  link_3:
+                    link_4:
+                      link_5:
+                        link_6:
+                          tool0:
+                            gripper:
+                              tcp:
+                                {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -199,7 +215,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 4.8604416847229
+      Distance: 3.5325703620910645
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -207,17 +223,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.783860445022583
-        Y: -0.15826834738254547
-        Z: 0.8353602290153503
+        X: 0.9574102759361267
+        Y: -0.20137035846710205
+        Z: 0.7333371043205261
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6003960371017456
+      Pitch: 0.740395724773407
       Target Frame: <Fixed Frame>
-      Yaw: 2.168577194213867
+      Yaw: 1.9335765838623047
     Saved: ~
 Window Geometry:
   Displays:
@@ -235,5 +251,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 2560
-  X: 2560
-  Y: 23
+  X: 2568
+  Y: 31
