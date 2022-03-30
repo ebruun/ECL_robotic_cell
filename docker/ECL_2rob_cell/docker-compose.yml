@@ -21,5 +21,5 @@ services:
       - ./../../setup/catkin/abb_irb4600_40_255:/root/catkin_ws/src/abb_irb4600_40_255
       - ./../../setup/catkin/abb_resources:/root/catkin_ws/src/abb_resources
       - ./../../setup/catkin/abb_on_axis:/root/catkin_ws/src/abb_on_axis
-      - ./../../setup/catkin/princeton_cell:/root/catkin_ws/src/princeton_cell
-      - ./../../setup/catkin/princeton_cell_moveit:/root/catkin_ws/src/princeton_cell_moveit
+      - ./../../setup/catkin/princeton_2rob_cell:/root/catkin_ws/src/princeton_2rob_cell
+      - ./../../setup/catkin/moveit_2rob_cell:/root/catkin_ws/src/moveit_2rob_cell

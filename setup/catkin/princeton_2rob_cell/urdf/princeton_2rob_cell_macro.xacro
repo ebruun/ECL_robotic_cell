@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:macro name="princeton_2rob_cell">
+
+    <!-- include files -->
+    <xacro:include filename="$(find abb_on_axis)/urdf/abb_on_axis_macro.xacro"/>
+
+    <link name="world" />
+
+    <!-- -->
+    <!--ROBOT 1-->
+    <joint name="r1_world_joint" type="fixed">
+      <parent link="world" />
+      <child link = "r1_axis" />
+      <origin xyz="3.70 3.45 0.02" rpy="0.0 0.0 3.14159" />
+    </joint>
+
+    <xacro:abb_on_axis prefix="r1_" />
+
+    <!-- -->
+    <!--ROBOT 2-->
+    <joint name="r2_world_joint" type="fixed">
+      <parent link="world" />
+      <child link = "r2_axis" />
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+    </joint>
+
+    <xacro:abb_on_axis prefix="r2_" />
+
+
+
+  </xacro:macro>
+</robot>
+
+

@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: princeton_2rob_cell
+    relative_path: urdf/princeton_2rob_cell.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/princeton_2rob_cell.srdf
+  CONFIG:
+    author_name: Romana Rust
+    author_email: rust@arch.ethz.ch
+    generated_timestamp: 1630270898

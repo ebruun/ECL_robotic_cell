@@ -196,63 +196,6 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          r3_balancer_piston:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          r3_base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_gripper:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_tcp:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          r3_tool0:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
           world:
             Alpha: 1
             Show Axes: false
@@ -279,7 +222,7 @@ Visualization Manager:
         Goal State Color: 85; 170; 255
         Interactive Marker Size: 0.5
         Joint Violation Color: 255; 0; 255
-        Planning Group: robot2_track_gripper
+        Planning Group: robot2_axis_gripper
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
@@ -423,63 +366,6 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
           r2_tool0:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          r3_balancer_piston:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          r3_base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_gripper:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_link_6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          r3_tcp:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          r3_tool0:
             Alpha: 1
             Show Axes: false
             Show Trail: false

@@ -9,7 +9,7 @@
   </include>
   <include file="$(find file_server)/launch/file_server.launch" />
 
-  <include file="$(find princeton_cell_moveit)/launch/planning_context.launch">
+  <include file="$(find moveit_2rob_cell)/launch/planning_context.launch">
     <arg name="load_robot_description" value="true"/>
   </include>
 
@@ -19,7 +19,7 @@
   </node>
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
 
-  <include file="$(find princeton_cell_moveit)/launch/move_group.launch">
+  <include file="$(find moveit_2rob_cell)/launch/move_group.launch">
     <arg name="allow_trajectory_execution" value="true"/>
     <arg name="fake_execution" value="true"/>
     <arg name="info" value="true"/>
@@ -27,7 +27,7 @@
   </include>
 
   <!-- Run Rviz and load the default config to see the state of the move_group node -->
-  <include file="$(find princeton_cell_moveit)/launch/moveit_rviz.launch" if="$(arg gui)">
+  <include file="$(find moveit_2rob_cell)/launch/moveit_rviz.launch" if="$(arg gui)">
     <arg name="config" value="true"/>
     <arg name="debug" value="$(arg debug)"/>
   </include>
