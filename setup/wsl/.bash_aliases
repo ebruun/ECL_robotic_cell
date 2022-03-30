@@ -21,7 +21,7 @@ alias l='ls -CF'
 alias irb4600="abb_irb4600_40_255_TEST"
 
 alias moveit="roslaunch moveit_setup_assistant setup_assistant.launch"
-alias ros_disp="roslaunch princeton_cell display.launch"
+alias ros_disp="roslaunch princeton_2rob_cell display.launch"
 
 
 # Functions
@@ -74,10 +74,10 @@ export -f all_urdf_make
 
 
 function all_moveit_copy () {
+        rm -R ~/catkin_ws/src/moveit_2rob_cell;
         rm -R ~/catkin_ws/src/moveit_3rob_cell;
         rm -R ~/catkin_ws/src/moveit_irb7600;
-        rm -R ~/catkin_ws/src/princeton_cell_moveit;
+        cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/moveit_2rob_cell ~/catkin_ws/src;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/moveit_3rob_cell ~/catkin_ws/src;
-        cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/moveit_irb7600 ~/catkin_ws/src;
-        cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/princeton_cell_moveit ~/catkin_ws/src;}
+        cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/moveit_irb7600 ~/catkin_ws/src;}
 export -f all_moveit_copy

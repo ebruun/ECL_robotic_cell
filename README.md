@@ -1,4 +1,4 @@
-# ECL_robotic_cell
+# ECL Robotic Cell
 
 ## Robotic cell setup in Princeton ECL
 
@@ -97,5 +97,6 @@ check the urdf definitions by visualizing in RH/GH:
 check the moveit definition in RH/GH in  folder:
 
 * open `setup/grasshopper/_ECL.3dm`
+* if compose-up on *ECL_2rob_cell*: `setup/grasshopper/2rob_cell_visualize.ghx`
 * if compose-up on *ECL_3rob_cell*: `setup/grasshopper/3rob_cell_visualize.ghx`
 * if compose-up on *ECL_7600*: `setup/grasshopper/IRB7600_visualize.ghx`
