@@ -105,6 +105,6 @@ check the moveit definition in RH/GH in  folder:
 
 ## Work Object
 
-measuring in tool: https://www.youtube.com/watch?v=l83fSt12-40
+measuring in tool: [Video Link](https://www.youtube.com/watch?v=l83fSt12-40)
 
-create work object: https://www.youtube.com/watch?v=Qgij4_uiyGE
+create work object: [Video Link](https://www.youtube.com/watch?v=Qgij4_uiyGE)
