@@ -69,6 +69,8 @@ xacro files:
 
 * Function to copy all xacro files from windows to Linux: `all_xacro_copy`
 * Function to make all URDFs with ROS and copy these files back onto Windows: `all_urdf_make`
+* Run `catkin_make`
+* Run `source devel/setup.ash`
 
 ## Check the generated URDFs and Moveit
 
@@ -100,3 +102,9 @@ check the moveit definition in RH/GH in  folder:
 * if compose-up on *ECL_2rob_cell*: `setup/grasshopper/2rob_cell_visualize.ghx`
 * if compose-up on *ECL_3rob_cell*: `setup/grasshopper/3rob_cell_visualize.ghx`
 * if compose-up on *ECL_7600*: `setup/grasshopper/IRB7600_visualize.ghx`
+
+## Work Object
+
+measuring in tool: https://www.youtube.com/watch?v=l83fSt12-40
+
+create work object: https://www.youtube.com/watch?v=Qgij4_uiyGE

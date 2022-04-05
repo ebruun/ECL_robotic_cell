@@ -18,11 +18,12 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias irb4600="abb_irb4600_40_255_TEST"
 
 alias moveit="roslaunch moveit_setup_assistant setup_assistant.launch"
-alias ros_disp="roslaunch princeton_2rob_cell display.launch"
-
+alias moveit_2rob_cell="roslaunch ~/catkin_ws/src/moveit_2rob_cell/launch/demo.launch"
+alias moveit_3rob_cell="roslaunch ~/catkin_ws/src/moveit_3rob_cell/launch/demo.launch"
+alias ros_disp_2rob="roslaunch princeton_2rob_cell display.launch"
+alias ros_disp_3rob="roslaunch princeton_3rob_cell display.launch"
 
 # Functions
 function bashrc () {
