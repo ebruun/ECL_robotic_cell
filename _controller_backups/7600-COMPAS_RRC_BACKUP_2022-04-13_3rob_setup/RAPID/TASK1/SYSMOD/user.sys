@@ -1,0 +1,42 @@
+
+MODULE user (SYSMODULE)
+
+ ! Predefined user data
+ !*********************
+
+ ! Declaration of numeric registers reg1...reg5
+ VAR num reg1 := 0;
+ VAR num reg2 := 0;
+ VAR num reg3 := 0;
+ VAR num reg4 := 0;
+ VAR num reg5 := 0;
+ 
+ ! Declaration of stopwatch clock1
+ VAR clock clock1;
+
+ ! Template for declaration of workobject wobj1
+ !TASK PERS wobjdata wobj1 := [FALSE, TRUE, "", [[0, 0, 0],[1, 0, 0, 0]],[[0, 0, 0],[1, 0, 0, 0]]];
+
+ !___________________!
+ !-- WORK OBJECTS --!!
+ !___________________!
+ 
+ ! Look in BASE for defaults
+ 
+ ! ZeroWaste (wrong = x-axis in wrong dirn)
+ TASK PERS wobjdata ecl_rob3_zerowaste:=[FALSE,TRUE,"",[[1776.27,240.085,695.195],[0.00447221,-0.000156608,-0.00949994,0.999945]],[[0,0,0],[1,0,0,0]]];
+ ! TASK PERS wobjdata ecl_rob3_zerowaste_wrong:=[FALSE,TRUE,"",[[2275.37,248.895,695.64],[0.00162692,0.999992,0.00355014,0.000666723]],[[0,0,0],[1,0,0,0]]];
+
+ 
+ !___________________!
+ !------ TOOLS -----!!
+ !___________________!
+ TASK PERS tooldata ecl_rob3_calibration_tip:=[TRUE,[[0.583723,0.0236933,77.9321],[1,0,0,0]],[1,[0,0,100],[1,0,0,0],0,0,0]];
+ 
+ 
+ !___________________!
+ !------- NEW ------!!
+ !___________________!
+
+ 
+ENDMODULE
