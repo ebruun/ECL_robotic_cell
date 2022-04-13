@@ -16,4 +16,4 @@ rob2 = np.array([
     [3107.65, 1478.91, 367.994],  # ZeroWaste2
 ])
 
-print(np.linalg.norm(rob1-rob2,axis=1))
+print(np.linalg.norm(rob1 - rob2, axis=1))
