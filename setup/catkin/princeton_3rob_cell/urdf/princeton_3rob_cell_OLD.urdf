@@ -12,7 +12,7 @@
   <joint name="r1_world_joint" type="fixed">
     <parent link="world"/>
     <child link="r1_axis"/>
-    <origin rpy="0.0 0.0 3.14159" xyz="3.6986 3.4507 0.015"/>
+    <origin rpy="0.0 0.0 3.14159" xyz="3.70 3.45 0.02"/>
   </joint>
   <!-- Conversion were obtained from http://www.e-paint.co.uk/Lab_values.asp
        unless otherwise stated. -->
@@ -87,7 +87,7 @@
   <link name="r1_gripper">
     <visual>
       <geometry>
-        <mesh filename="package://abb_irb4600_40_255/meshes/visual/calibration_tool_R1.stl"/>
+        <mesh filename="package://abb_irb4600_40_255/meshes/visual/gripper.stl"/>
       </geometry>
       <material name="">
         <color rgba="1.0 0.8 0.796078431372549 1"/>
@@ -95,7 +95,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://abb_irb4600_40_255/meshes/collision/calibration_tool_R1.stl"/>
+        <mesh filename="package://abb_irb4600_40_255/meshes/collision/gripper.stl"/>
       </geometry>
       <material name="">
         <color rgba="1.0 0.8 0.796078431372549 1"/>
@@ -345,7 +345,7 @@
   <joint name="r2_world_joint" type="fixed">
     <parent link="world"/>
     <child link="r2_axis"/>
-    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.00137 0.00036"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
   </joint>
   <!-- Conversion were obtained from http://www.e-paint.co.uk/Lab_values.asp
        unless otherwise stated. -->
@@ -420,7 +420,7 @@
   <link name="r2_gripper">
     <visual>
       <geometry>
-        <mesh filename="package://abb_irb4600_40_255/meshes/visual/calibration_tool_R2.stl"/>
+        <mesh filename="package://abb_irb4600_40_255/meshes/visual/gripper.stl"/>
       </geometry>
       <material name="">
         <color rgba="1.0 0.8 0.796078431372549 1"/>
@@ -428,7 +428,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://abb_irb4600_40_255/meshes/collision/calibration_tool_R2.stl"/>
+        <mesh filename="package://abb_irb4600_40_255/meshes/collision/gripper.stl"/>
       </geometry>
       <material name="">
         <color rgba="1.0 0.8 0.796078431372549 1"/>
@@ -678,14 +678,14 @@
   <joint name="r3_world_joint" type="fixed">
     <parent link="world"/>
     <child link="r3_base_link"/>
-    <origin rpy="0.0 0.0 3.14159" xyz="4.885 1.7193 -0.3774"/>
+    <origin rpy="0.0 0.0 3.14159" xyz="5.3 1.725 -0.3"/>
   </joint>
   <!-- GRIPPER -->
   <!-- gripper link list -->
   <link name="r3_gripper">
     <visual>
       <geometry>
-        <mesh filename="package://abb_irb7600_400_255/meshes/visual/calibration_tool.stl"/>
+        <mesh filename="package://abb_irb7600_400_255/meshes/visual/gripper.stl"/>
       </geometry>
       <material name="">
         <color rgba="1.0 0.8 0.796078431372549 1"/>
@@ -693,7 +693,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://abb_irb7600_400_255/meshes/collision/calibration_tool.stl"/>
+        <mesh filename="package://abb_irb7600_400_255/meshes/collision/gripper.stl"/>
       </geometry>
       <material name="">
         <color rgba="1.0 0.8 0.796078431372549 1"/>
