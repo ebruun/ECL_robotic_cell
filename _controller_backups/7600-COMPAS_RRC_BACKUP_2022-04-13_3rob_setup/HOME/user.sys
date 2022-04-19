@@ -16,5 +16,6 @@ MODULE user (SYSMODULE)
 
  ! Template for declaration of workobject wobj1
  !TASK PERS wobjdata wobj1 := [FALSE, TRUE, "", [[0, 0, 0],[1, 0, 0, 0]],[[0, 0, 0],[1, 0, 0, 0]]];
+ TASK PERS wobjdata wobj1:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
 
 ENDMODULE
