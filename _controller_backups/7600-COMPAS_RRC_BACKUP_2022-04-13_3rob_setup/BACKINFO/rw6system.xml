@@ -1,2 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<system creation-date="2021-11-18 09:20:02" desc=" " enable="False" id="6711E755-AF43-4A7B-A714-6648F8080533" last-modified-date="" name="7600-COMPAS_RRC"><applications><application name="RobotWare" version="6.04.1027"><settings><setting-file path="/hd0a/7600-COMPAS_RRC/INTERNAL/controller.rsf" /><system-xml path="/hd0a/7600-COMPAS_RRC/system.xml" /><key-id path="/hd0a/7600-COMPAS_RRC/INTERNAL/key.id" /></settings></application></applications></system>
