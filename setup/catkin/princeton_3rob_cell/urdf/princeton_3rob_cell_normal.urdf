@@ -871,7 +871,7 @@
   <joint name="r3_joint_2" type="revolute">
     <parent link="r3_link_1"/>
     <child link="r3_link_2"/>
-    <origin rpy="0 0 0" xyz="0.4100 0 0.8305"/>
+    <origin rpy="0 0 0" xyz="0.4100 0 0.7797"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-1.0471975511965976" upper="1.4835298641951802" velocity="1.0471975511965976"/>
   </joint>
@@ -911,7 +911,7 @@
   <joint name="r3_joint_balancer_piston" type="fixed">
     <parent link="r3_link_1"/>
     <child link="r3_balancer_piston"/>
-    <origin rpy="0 0 0" xyz="-0.3779 0 0.7044"/>
+    <origin rpy="0 0 0" xyz="-0.3779 0 0.6536"/>
   </joint>
   <!-- -->
   <!-- ROS-Industrial 'base' frame: base_link to ABB World Coordinates transform -->

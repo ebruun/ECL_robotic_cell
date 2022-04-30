@@ -144,7 +144,7 @@
     <joint name="${prefix}joint_2" type="revolute">
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
-      <origin xyz="0.4100 0 0.8305" rpy="0 0 0"/>
+      <origin xyz="0.4100 0 0.7797" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
       <limit lower="-${radians(60)}" upper="${radians(85)}" effort="0" velocity="${radians(60)}"/>
     </joint>
@@ -190,7 +190,7 @@
     <joint name="${prefix}joint_balancer_piston" type="fixed">
       <parent link="${prefix}link_1"/>
       <child link="${prefix}balancer_piston"/>
-      <origin xyz="-0.3779 0 0.7044" rpy="0 0 0"/>
+      <origin xyz="-0.3779 0 0.6536" rpy="0 0 0"/>
     </joint>
 
     <!-- -->
