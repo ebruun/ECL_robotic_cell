@@ -12,7 +12,7 @@
   <joint name="r1_world_joint" type="fixed">
     <parent link="world"/>
     <child link="r1_axis"/>
-    <origin rpy="0.0 0.0 3.14159" xyz="3.6986 3.4507 0.015"/>
+    <origin rpy="0.0 0.0 3.14159" xyz="3.6970 3.4496 0.0165"/>
   </joint>
   <!-- Conversion were obtained from http://www.e-paint.co.uk/Lab_values.asp
        unless otherwise stated. -->
@@ -345,7 +345,7 @@
   <joint name="r2_world_joint" type="fixed">
     <parent link="world"/>
     <child link="r2_axis"/>
-    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.00137 0.00036"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.00178 0.00044"/>
   </joint>
   <!-- Conversion were obtained from http://www.e-paint.co.uk/Lab_values.asp
        unless otherwise stated. -->
@@ -678,7 +678,7 @@
   <joint name="r3_world_joint" type="fixed">
     <parent link="world"/>
     <child link="r3_base_link"/>
-    <origin rpy="0.0 0.0 3.14159" xyz="4.885 1.7193 -0.3774"/>
+    <origin rpy="-0.019001374398830925 0.00022822725853081357 3.1326456328791554" xyz="4.886272 1.716257 -0.322108"/>
   </joint>
   <!-- GRIPPER -->
   <!-- gripper link list -->
@@ -710,7 +710,7 @@
   <joint name="r3_tcp_joint" type="fixed">
     <parent link="r3_gripper"/>
     <child link="r3_tcp"/>
-    <origin rpy="0 0 0" xyz="0.583723 0.0236933 77.9321"/>
+    <origin rpy="0 0 0" xyz="0.000583723 0.0000236933 0.0779321"/>
   </joint>
   <!-- IRB7600-->
   <!-- irb7600 link list -->
