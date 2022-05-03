@@ -45,7 +45,7 @@ MODULE user (SYSMODULE)
  
  ! ACADIA Workshop
  ! the tool plane is defined as approx halfway along a finger. Total height of tool ~403mm, pickup ~2" along finger
- TASK PERS tooldata ecl_pneumatic_gripper:=[TRUE,[[0,0,352.0],[1,0,0,0]],[55,[0,0,150],[1,0,0,0],0,0,0]]; 
+ TASK PERS tooldata ecl_rob2_pneumatic_gripper:=[TRUE,[[0,0,352.0],[1,0,0,0]],[55,[0,0,150],[1,0,0,0],0,0,0]]; 
  
  ! calibration tool
  TASK PERS tooldata r2A_ecl_tip_EBIT_01:=[TRUE,[[0.194223,0.839324,153.644],[1,0,0,0]],[0.3,[0,0,150],[1,0,0,0],0,0,0]];
