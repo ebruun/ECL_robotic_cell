@@ -13,7 +13,7 @@
     <joint name="r1_world_joint" type="fixed">
       <parent link="world" />
       <child link = "r1_axis" />
-      <origin  xyz="3.6986 3.4507 0.015" rpy="0.0 0.0 3.14159"/>
+      <origin  xyz="3.6970 3.4496 0.0165" rpy="0.0 0.0 3.14159"/>
     </joint>
 
     <xacro:abb_on_axis prefix="r1_" />
@@ -23,7 +23,7 @@
     <joint name="r2_world_joint" type="fixed">
       <parent link="world" />
       <child link = "r2_axis" />
-      <origin xyz="0.0 0.00137 0.00036" rpy="0.0 0.0 0.0" />
+      <origin xyz="0.0 0.00178 0.00044" rpy="0.0 0.0 0.0" />
     </joint>
 
     <xacro:abb_on_axis prefix="r2_" />
@@ -33,7 +33,7 @@
     <joint name="r3_world_joint" type="fixed">
       <parent link="world" />
       <child link = "r3_base_link" />
-      <origin xyz="4.885 1.7193 -0.3774" rpy="0.0 0.0 3.14159"/>
+      <origin xyz="4.886272 1.716257 -0.322108" rpy="-0.019001374398830925 0.00022822725853081357 3.1326456328791554"/>
     </joint>
 
     <xacro:abb_irb7600_400_255 prefix="r3_" />
