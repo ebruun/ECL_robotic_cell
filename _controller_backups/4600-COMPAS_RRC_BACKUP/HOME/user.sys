@@ -1,5 +1,65 @@
 
 MODULE user (SYSMODULE)
 
+ ! Predefined user data
+ !*********************
+
+ ! Declaration of numeric registers reg1...reg5
+ VAR num reg1 := 0;
+ VAR num reg2 := 0;
+ VAR num reg3 := 0;
+ VAR num reg4 := 0;
+ VAR num reg5 := 0;
+
+ ! Declaration of stopwatch clock1
+ VAR clock clock1;
+ 
+ ! Template for declaration of workobject wobj1
+ !TASK PERS wobjdata wobj1 := [FALSE, TRUE, "", [[0, 0, 0],[1, 0, 0, 0]],[[0, 0, 0],[1, 0, 0, 0]]];
+ 
+!___________________!
+ !-- WORK OBJECTS --!!
+ !___________________!
+ 
+ ! R1 = Left
+ ! Look in BASE for defaults
+ 
+ ! ZeroWaste (wrong = x-axis in wrong dirn)
+ TASK PERS wobjdata ecl_rob1_zerowaste:=[FALSE,TRUE,"",[[3103.33,1481.11,366.83],[0.999976,-0.00604606,-0.00149283,-0.0029774]],[[0,0,0],[1,0,0,0]]];
+! TASK PERS wobjdata ecl_rob1_zerowaste_wrong:=[FALSE,TRUE,"",[[2605.05,1470.69,365.893],[0.000416806,-0.00540311,0.99997,0.00553321]],[[0,0,0],[1,0,0,0]]];
+
+ ! ACADIA workshop
+ ! new work object (based on lacing, but rotated so x is in same dirn as defined in ROS path-planning)
+ TASK PERS wobjdata ecl_platform:=[FALSE,TRUE,"",[[2237.410, 1816.990, 148.863], [0.999991, -0.000112, -0.000700, 0.004158]],[[0,0,0],[1,0,0,0]]];
+ 
+ ! new one for ACADIA close to start of the structure
+ TASK PERS wobjdata rob1_acadia_EBIT_01:=[FALSE,TRUE,"",[[-680.624,1567.49,823.009],[0.999971,0.000727707,-0.00129108,-0.00745658]],[[0,0,0],[1,0,0,0]]];
+
+ ! LightVault
+ TASK PERS wobjdata rotrobwob_r1_CG_04:=[FALSE,TRUE,"",[[2159.76, 1364.29, 84.5992], [0.707787, 0.001403, 0.000708, 0.706424]],[[0,0,0],[1,0,0,0]]];
+  
+ 
+ !___________________!
+ !------ TOOLS -----!!
+ !___________________!
+ 
+ ! ACADIA Workshop
+ ! the tool plane is defined as approx halfway along a finger. Total height of tool ~403mm, pickup ~2" along finger
+ TASK PERS tooldata ecl_pneumatic_gripper:=[TRUE,[[0,0,352.0],[1,0,0,0]],[55,[0,0,150],[1,0,0,0],0,0,0]];
+ 
+ ! calibration tool
+ TASK PERS tooldata r1B_ecl_tip_EBIT_01:=[TRUE,[[0.994227,1.30402,153.423],[1,0,0,0]],[0.3,[0,0,150],[1,0,0,0],0,0,0]];
+ TASK PERS tooldata ecl_rob1_calibration_tip:=[TRUE,[[-0.441033,-0.0930574,164.273],[1,0,0,0]],[1,[0,0,100],[1,0,0,0],0,0,0]];
+ 
+ ! LightVault
+! TASK PERS tooldata Vault04A_1_IXH:=[TRUE,[[0.8608,-0.264024,343.717],[0.0105468,-0.00302873,-0.999937,-0.002275]],[3,[0,0,150],[1,0,0,0],0,0,0]];
+! TASK PERS tooldata Vault04A_2_IXH:=[TRUE,[[1.98011,-0.489094,343.431],[0.0247857,0.708253,-0.705289,-0.0181852]],[3,[0,0,150],[1,0,0,0],0,0,0]];
+! TASK PERS tooldata Vault04A_3V_IXH:=[TRUE,[[0,0,247],[1,0,0,0]],[55,[0,0,150],[1,0,0,0],0,0,0]];
+
+ 
+ !___________________!
+ !------- NEW ------!!
+ !___________________!
+
  
 ENDMODULE

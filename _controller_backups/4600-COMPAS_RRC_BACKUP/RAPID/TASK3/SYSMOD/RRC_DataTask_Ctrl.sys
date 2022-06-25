@@ -52,7 +52,7 @@ MODULE RRC_DataTask_Ctrl(SYSMODULE)
     TASK PERS num n_RRC_ViCustomSocketPortRec{n_RRC_NumOfCha}:=[31101,31102,31103,31104];
     TASK PERS num n_RRC_ViCustomSocketPortSen{n_RRC_NumOfCha}:=[31201,31202,31203,31204];
     !
-    TASK PERS num n_RRC_ChaNr:=2;
+    TASK PERS num n_RRC_ChaNr:=1;
     TASK PERS num n_RRC_ReadPtrRecBuf{n_RRC_NumOfCha}:=[1,1,1,1];
     TASK PERS num n_RRC_Act_S_ID:=1;
     TASK PERS num n_RRC_CounterFStr{n_RRC_NumOfCha}:=[0,0,0,0];
@@ -67,7 +67,7 @@ MODULE RRC_DataTask_Ctrl(SYSMODULE)
     ! Declaration :     string
     !************************************************
     !
-    TASK PERS string st_RRC_ChaTask:="T_ROB1";
+    TASK PERS string st_RRC_ChaTask:="T_ROB2";
     TASK PERS string st_RRC_EvLogMsgHeader:="RRC -- Controller";
     !
     TASK PERS string st_RRC_CyclicJob{n_RRC_NumOfCha}:=["r_RRC_GetJointT","","",""];

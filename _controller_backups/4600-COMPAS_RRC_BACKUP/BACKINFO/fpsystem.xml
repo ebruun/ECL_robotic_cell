@@ -93,7 +93,7 @@
       <PROP name="FilterString" value="" />
     </DATA>
     <DATA id="QuickSet">
-      <PROP name="IncrementToggle" value="Small" />
+      <PROP name="IncrementToggle" value="Medium" />
       <PROP name="MechUnitPanelList" value=" ROB_1, ROB_2, TRACK_1, TRACK_2" />
     </DATA>
     <DATA id="IO Filter">
