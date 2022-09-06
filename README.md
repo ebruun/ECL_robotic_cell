@@ -60,17 +60,24 @@ Basically work in Linux (through WSL), and then copy files that are generated ov
 
 ## Making URDFs with ROS
 
-shell scripts:
-
+.bashrc and .bashalias files:
 * copy the `.bashrc` and `.bash_aliases` files to the root directory in WSL
-* Function to update these files can edit on windows and copy to Linux: `copy_load_bash_files`
+  * `cd ~` and `ls -la` to see dot files
+* You can edit these files on windows side and then copy over to with this function: `copy_load_bash_files`
+* `alias` to see the alias, this will not show the functions though
+
 
 xacro files:
-
+* work on the `_macro.xacro` files on the windows side, and then copy over to Linux to make the urdfs
 * Function to copy all xacro files from windows to Linux: `all_xacro_copy`
+  * deletes existing folders under `~/catkin_ws/src/`
+  * copies over new `launch`, `meshes`, `rviz`, `urdf` folders
+  * copies over `CMakeLists.txt` and `package.xml` files
 * Function to make all URDFs with ROS and copy these files back onto Windows: `all_urdf_make`
+  * `rosrun xacro xacro --inorder -o URDF_OUT XACRO_IN`
+  * then copies over the urdf file onto windows
 * Run `catkin_make`
-* Run `source devel/setup.ash`
+* Run `source devel/setup.bash`
 
 ## Check the generated URDFs and Moveit
 
