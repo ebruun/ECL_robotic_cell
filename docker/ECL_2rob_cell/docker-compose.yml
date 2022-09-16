@@ -1,7 +1,7 @@
 version: '2'
 services:
   ECL_2rob:
-    image: gramaziokohler/ros-createlab
+    image: gramaziokohler/ros-noetic-dfab
     container_name: ECL_2rob
     environment:
       - ROS_HOSTNAME=ECL_2rob
@@ -19,7 +19,7 @@ services:
     volumes:
       - ./scripts:/root/catkin_ws/scripts
       - ./../../setup/catkin/abb_irb4600_40_255:/root/catkin_ws/src/abb_irb4600_40_255
-      - ./../../setup/catkin/abb_resources:/root/catkin_ws/src/abb_resources
+      # - ./../../setup/catkin/abb_resources:/root/catkin_ws/src/abb_resources
       - ./../../setup/catkin/abb_on_axis:/root/catkin_ws/src/abb_on_axis
       - ./../../setup/catkin/princeton_2rob_cell:/root/catkin_ws/src/princeton_2rob_cell
       - ./../../setup/catkin/moveit_2rob_cell:/root/catkin_ws/src/moveit_2rob_cell
