@@ -1,16 +1,18 @@
 This has no version number:
 
-`conda env export --from-history --name compas_fab> environment.yml`
+`conda env export --from-history --name ecl_robotic_cell> environment.yml`
 
 this has no build number:
 
-`conda env export --no-builds --name compas_fab > environment.yml`
+`conda env export --no-builds --name ecl_robotic_cell > environment.yml`
 
 create new:
 
 `conda env create`
 
-if you change the conda environment, make sure to update the env name in .git/hooks/pre-commit file
+if you change the conda environment, make sure to update the file .git/hooks/pre-commit file
+
+`pre-commit install`
 
 
 # ECL Robotic Cell
