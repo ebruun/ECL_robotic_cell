@@ -11,6 +11,7 @@ create new:
 `conda env create`
 
 if you change the conda environment, make sure to update the file .git/hooks/pre-commit file
+(I don't think pre-commit is installed for this repo, so probably ignore this)
 
 `pre-commit install`
 
