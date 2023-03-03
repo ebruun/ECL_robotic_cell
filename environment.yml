@@ -6,5 +6,6 @@ dependencies:
   - python==3.8.10
   - numpy
   - compas_fab==0.26.0
+  - compas_rrc==1.1.0
 prefix: C:\Users\Edvard\.conda\envs\ecl_robotic_cell
 
