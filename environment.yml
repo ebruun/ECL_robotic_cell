@@ -4,7 +4,7 @@ channels:
   - defaults
 dependencies:
   - python==3.8.10
-  - numpy
+  - numpy==1.23.3
   - compas_fab==0.26.0
   - compas_rrc==1.1.0
 prefix: C:\Users\Edvard\.conda\envs\ecl_robotic_cell
