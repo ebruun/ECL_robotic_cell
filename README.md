@@ -20,8 +20,8 @@ if you change the conda environment, make sure to update the file .git/hooks/pre
 
 ## Robotic cell setup in Princeton ECL
 
-* 2 x IRB4600/2.55 on 3.9 m tracks
-* 1 x IRB7600 stationary
+* 2 x IRB4600-40/2.55 on 3.9m tracks
+* 1 x IRB7600-400/2.55 stationary
 
 ## Multiple Robot Connect
 
