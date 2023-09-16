@@ -1,19 +1,23 @@
-This has no version number:
+## Making clean environment.yml file
 
-`conda env export --from-history --name ecl_robotic_cell> environment.yml`
+export only explictly downloaded packages:
 
-this has no build number:
+`conda env export --from-history --name ecl_robotic_cell > environment.yml`
 
-`conda env export --no-builds --name ecl_robotic_cell > environment.yml`
-
-create new:
-
+create new from environment.yml file:
 `conda env create`
 
-if you change the conda environment, make sure to update the file .git/hooks/pre-commit file
-(I don't think pre-commit is installed for this repo, so probably ignore this)
+## Linting and Pre-commit
 
-`pre-commit install`
+(pre-commit is not set up for this repo, so probably ignore this)
+
+make sure .pre-commit-config.yaml file is up to date
+
+language_version: python (use system version of python)
+
+run this: `pre-commit install`
+
+in .vscode/settings.json make sure formatonsave = TRUE
 
 
 # ECL Robotic Cell
