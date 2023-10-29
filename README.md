@@ -98,6 +98,7 @@ xacro files:
 * Function to make all URDFs with ROS and copy these files back onto Windows: `all_urdf_make`
   * `rosrun xacro xacro --inorder -o URDF_OUT XACRO_IN`
   * then copies over the URDF file onto windows
+  * NOTE THAT CURRENTLY 3ROB CELL THERE IS MANUAL TWEAKING IN THE URDF FILE FOR THE POSITION OF THE 3RD ROBOT...
 * Run `catkin_make`
 * Run `source devel/setup.bash`
 
