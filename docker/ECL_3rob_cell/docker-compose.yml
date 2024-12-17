@@ -14,7 +14,7 @@ services:
       - roslaunch
       - /root/catkin_ws/scripts/main.launch
       - rrc:=true
-      - gui:=false
+      - gui:=true
       - robot_ip_4600:=192.168.0.102 # WAN port, Ethernet Switch
       - robot_ip_7600:=192.168.0.103 # WAN port, Ethernet Switch
     volumes:

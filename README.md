@@ -4,8 +4,14 @@ export only explictly downloaded packages:
 
 `conda env export --from-history --name ecl_robotic_cell > environment.yml`
 
+If on a windows machine, turn off the prefix line (this is only for mac)
+
 create new from environment.yml file:
 `conda env create`
+
+Make sure the correct interpreter corresponding to this environment is selected in VS-code, View --> Command Palette --> Python, Select Interpreter --> ecl_robotic_cell
+
+fixes some incompatibility with rosliby 1.8.0, so specifying 1.3.0, which works for the specified compas_fab and compas versions
 
 ## Linting and Pre-commit
 
