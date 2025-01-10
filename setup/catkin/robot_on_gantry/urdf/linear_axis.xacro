@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <xacro:macro name="linear_axis" params="prefix">
+    <!-- LINEAR AXIS -->
+    <!-- linear axis link list -->
+    <link name="${prefix}axis">
+      <inertial>
+        <origin xyz="0.0 0.0 0.0"/>
+        <mass value="120"/>
+        <inertia ixx="-4.98000" iyy="-5.95200" izz="0.82800" ixy="-0.00000" ixz="2.70000" iyz="-0.00000"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="package://robot_on_gantry/meshes/visual/axis1.stl"/>
+        </geometry>
+        <xacro:material_abb_pebble_gray />
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://robot_on_gantry/meshes/collision/axis1.stl"/>
+        </geometry>
+        <xacro:material_abb_pebble_gray />
+      </collision>
+    </link>
+
+    <link name="${prefix}Xcart">
+      <inertial>
+        <origin xyz="0.0 0.0 0.0"/>
+        <mass value="120.00000"/>
+        <inertia ixx="-4.98000" iyy="-5.95200" izz="0.82800" ixy="-0.00000" ixz="2.70000" iyz="-0.00000"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="package://robot_on_gantry/meshes/visual/Xcart.stl"/>
+        </geometry>
+        <xacro:material_abb_gray_white />
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://robot_on_gantry/meshes/collision/Xcart.stl"/>
+        </geometry>
+        <xacro:material_abb_gray_white />
+      </collision>
+    </link>
+
+    <link name="${prefix}Ycart">
+      <inertial>
+        <origin xyz="0.0 0.0 0.0"/>
+        <mass value="120.00000"/>
+        <inertia ixx="-4.98000" iyy="-5.95200" izz="0.82800" ixy="-0.00000" ixz="2.70000" iyz="-0.00000"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="package://robot_on_gantry/meshes/visual/Ycart.stl"/>
+        </geometry>
+        <xacro:material_abb_gray_white />
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://robot_on_gantry/meshes/collision/Ycart.stl"/>
+        </geometry>
+        <xacro:material_abb_gray_white />
+      </collision>
+    </link>
+
+    <link name="${prefix}Zcart">
+      <inertial>
+        <origin xyz="0.0 0.0 0.0"/>
+        <mass value="120.00000"/>
+        <inertia ixx="-4.98000" iyy="-5.95200" izz="0.82800" ixy="-0.00000" ixz="2.70000" iyz="-0.00000"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="package://robot_on_gantry/meshes/visual/Zcart.stl"/>
+        </geometry>
+        <xacro:material_abb_gray_white />
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://robot_on_gantry/meshes/collision/Zcart.stl"/>
+        </geometry>
+        <xacro:material_abb_gray_white />
+      </collision>
+    </link>
+
+    <!-- linear axis joint list -->
+    <joint name="${prefix}Xcart_joint" type="prismatic">
+      <parent link="${prefix}axis"/>
+      <child  link="${prefix}Xcart"/>
+      <origin xyz="0 0 0" rpy="0 0 0 "/>
+      <axis   xyz="1 0 0"/>
+      <limit lower="0" upper="10.1" effort="100000" velocity="2.618" />
+      <dynamics damping="0.2" friction="0" />
+    </joint>
+
+    <joint name="${prefix}Ycart_joint" type="prismatic">
+      <parent link="${prefix}Xcart"/>
+      <child  link="${prefix}Ycart"/>
+      <origin xyz="0 0 0" rpy="0 0 0 "/>
+      <axis   xyz="0 1 0"/>
+      <limit lower="0" upper="4.5" effort="100000" velocity="2.618" />
+      <dynamics damping="0.2" friction="0" />
+    </joint>
+
+    <joint name="${prefix}Zcart_joint" type="prismatic">
+      <parent link="${prefix}Ycart"/>
+      <child  link="${prefix}Zcart"/>
+      <origin xyz="0 0 0" rpy="0 0 0 "/>
+      <axis   xyz="0 0 1"/>
+      <limit lower="0" upper="1.8" effort="100000" velocity="2.618" />
+      <dynamics damping="0.2" friction="0" />
+    </joint>
+
+    <joint name="${prefix}abb_joint" type="fixed">
+      <parent link="${prefix}cart"/>
+      <child  link="${prefix}base_link"/>
+      <origin xyz="0 0 0 " rpy="0 0 ${pi/2} "/>
+      <dynamics damping="0.2" friction="0" />
+    </joint>
+
+    <!-- ARE WE MISSING A WORLD TO AXIS fixed joint? for only the robot_on_gantry group?-->
+
+  </xacro:macro>
+</robot>
+
+

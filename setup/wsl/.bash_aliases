@@ -4,7 +4,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
-
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
@@ -43,12 +42,14 @@ function all_xacro_copy () {
         rm -R ~/catkin_ws/src/princeton_2rob_cell;
         rm -R ~/catkin_ws/src/princeton_3rob_cell;
         rm -R ~/catkin_ws/src/abb_resources;
+        rm -R ~/catkin_ws/src/robot_on_gantry;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/abb_irb4600_40_255 ~/catkin_ws/src;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/abb_irb7600_400_255 ~/catkin_ws/src;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/abb_on_axis ~/catkin_ws/src;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/princeton_2rob_cell ~/catkin_ws/src;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/princeton_3rob_cell ~/catkin_ws/src;
-        cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/abb_resources ~/catkin_ws/src;}
+        cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/abb_resources ~/catkin_ws/src;
+        cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/robot_on_gantry ~/catkin_ws/src;}
 export -f all_xacro_copy
 
 function all_urdf_make () {
@@ -59,6 +60,10 @@ function all_urdf_make () {
         cd ~/catkin_ws/src/abb_on_axis/urdf;
         rosrun xacro xacro --inorder -o abb_on_axis.urdf abb_on_axis.xacro;
         cp abb_on_axis.urdf /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/abb_on_axis/urdf;
+
+        # cd ~/catkin_ws/src/robot_on_gantry/urdf;
+        # rosrun xacro xacro --inorder -o robot_on_gantry.urdf robot_on_gantry.xacro;
+        # cp robot_on_gantry.urdf /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/robot_on_gantry/urdf;
 
         cd ~/catkin_ws/src/abb_irb7600_400_255/urdf;
         rosrun xacro xacro --inorder -o abb_irb7600_400_255.urdf abb_irb7600_400_255.xacro

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot name="robot_on_gantry" xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <!-- include files -->
+  <xacro:include filename="$(find robot_on_gantry)/urdf/robot_on_gantry_macro.xacro"/>
+
+  <!-- parameter defs -->
+  <xacro:robot_on_gantry prefix="" />
+</robot>
