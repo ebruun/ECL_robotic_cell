@@ -107,5 +107,6 @@ source ~/catkin_ws/devel/setup.bash
 
 # For moveit stuff to show up
 # Might need to update this to what the IP is, changes the %ProgramFiles(x86)%\XMing\X0.hosts file
+# export DISPLAY=143.215.121.124:0.0
 export DISPLAY=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'):0.0
 export LIBGL_ALWAYS_INDIRECT=0

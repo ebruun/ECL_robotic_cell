@@ -114,6 +114,15 @@ xacro files:
 * Run `catkin_make`
 * Run `source devel/setup.bash`
 
+Okay an important error occurs, everytime you copy folders in catkin_ws, you have to rebuild with `catkin_make` otherwise the following error appears:
+
+```
+[rosrun] Couldn't find executable named xacro below /opt/ros/noetic/share/xacro
+[rosrun] Found the following, but they're either not files,
+[rosrun] or not executable:
+[rosrun]   /opt/ros/noetic/share/xacro
+```
+
 ## Check the generated URDFs and moveit
 
 to see the URDF links (based on rviz config files saved in folders)

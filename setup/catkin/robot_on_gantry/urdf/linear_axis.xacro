@@ -113,7 +113,7 @@
     </joint>
 
     <joint name="${prefix}abb_joint" type="fixed">
-      <parent link="${prefix}cart"/>
+      <parent link="${prefix}Zcart"/>
       <child  link="${prefix}base_link"/>
       <origin xyz="0 0 0 " rpy="0 0 ${pi/2} "/>
       <dynamics damping="0.2" friction="0" />
