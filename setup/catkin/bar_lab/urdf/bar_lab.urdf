@@ -483,7 +483,7 @@
   <link name="robot2_tool0"/>
   <!--  -->
   <!--  -->
-  <!-- ROBOT 1_1 GANTRY JOINTS -->
+  <!-- GLOBAL JOINTS -->
   <joint name="world_joint" type="fixed">
     <parent link="world"/>
     <child link="columns"/>
@@ -496,12 +496,15 @@
     <axis xyz="1.0 0.0 0.0"/>
     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
+  <!--  -->
+  <!--  -->
+  <!-- BRIDGE 1 JOINTS -->
   <joint name="bridge1_joint_EA_X" type="prismatic">
     <parent link="x_rail"/>
     <child link="bridge1"/>
     <axis xyz="1.0 0.0 0.0"/>
     <dynamics damping="0.2" friction="0.0"/>
-    <limit upper="37.206" effort="100000.0" velocity="2.618"/>
+    <limit lower="0.0" upper="13.005" effort="100000.0" velocity="2.618"/>
     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
   <joint name="robot1_joint_EA_Y" type="prismatic">
@@ -509,7 +512,7 @@
     <child link="robot1_xy_cart"/>
     <axis xyz="0.0 1.0 0.0"/>
     <dynamics damping="0.2" friction="0.0"/>
-    <limit upper="9.65" effort="100000.0" velocity="2.618"/>
+    <limit lower="0.0" upper="9.65" effort="100000.0" velocity="2.618"/>
     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
   <joint name="robot1_joint_EA_Z" type="prismatic">
@@ -517,12 +520,12 @@
     <child link="robot1_base"/>
     <axis xyz="0.0 0.0 1.0"/>
     <dynamics damping="0.2" friction="0.0"/>
-    <limit lower="0.0" upper="4.713" effort="100000.0" velocity="2.618"/>
+    <limit lower="2.956" upper="4.706" effort="100000.0" velocity="2.618"/>
     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
   <!--  -->
   <!--  -->
-  <!-- ROBOT 1_1 JOINTS -->
+  <!-- ROBOT 1 JOINTS -->
   <joint name="robot1_joint_0" type="fixed">
     <parent link="robot1_base"/>
     <child link="robot1_base_link"/>
@@ -586,7 +589,7 @@
   </joint>
   <!--  -->
   <!--  -->
-  <!-- ROBOT 2_1 GANTRY JOINTS -->
+  <!-- BRUDGE 2 JOINTS -->
   <joint name="bridge2_joint_EA_X" type="prismatic">
     <parent link="x_rail"/>
     <child link="bridge2"/>
@@ -600,7 +603,7 @@
     <child link="robot2_xy_cart"/>
     <axis xyz="0.0 1.0 0.0"/>
     <dynamics damping="0.2" friction="0.0"/>
-    <limit upper="9.65" effort="100000.0" velocity="2.618"/>
+    <limit lower="0.0" upper="9.65" effort="100000.0" velocity="2.618"/>
     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
   <joint name="robot2_joint_EA_Z" type="prismatic">
@@ -608,12 +611,12 @@
     <child link="robot2_base"/>
     <axis xyz="0.0 0.0 1.0"/>
     <dynamics damping="0.2" friction="0.0"/>
-    <limit lower="0.0" upper="4.713" effort="100000.0" velocity="2.618"/>
+    <limit lower="2.956" upper="4.706" effort="100000.0" velocity="2.618"/>
     <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
   <!--  -->
   <!--  -->
-  <!-- ROBOT 2_1  JOINTS -->
+  <!-- ROBOT 2 JOINTS -->
   <joint name="robot2_joint_0" type="fixed">
     <parent link="robot2_base"/>
     <child link="robot2_base_link"/>
@@ -635,7 +638,7 @@
     <axis xyz="0.0 1.0 0.0"/>
     <dynamics damping="0.2" friction="0.0"/>
     <limit lower="-1.57079632679" upper="2.61799387799" effort="100000.0" velocity="2.618"/>
-    <origin xyz="0.175 0.0 0.495" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.320 0.0 0.680" rpy="0.0 0.0 0.0"/>
   </joint>
   <joint name="robot2_joint_3" type="revolute">
     <parent link="robot2_link_2"/>
@@ -643,7 +646,7 @@
     <axis xyz="0.0 1.0 0.0"/>
     <dynamics damping="0.2" friction="0.0"/>
     <limit lower="-3.14159265359" upper="1.308996939" effort="100000.0" velocity="2.618"/>
-    <origin xyz="0.0 0.0 1.095" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.0 0.0 0.974" rpy="0.0 0.0 0.0"/>
   </joint>
   <joint name="robot2_joint_4" type="revolute">
     <parent link="robot2_link_3"/>
