@@ -1,5 +1,6 @@
 #PROJECT SPECIFIC
 *.3dmbak
+*.stlbak
 *.rhl
 
 # Byte-compiled / optimized / DLL files
