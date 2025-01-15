@@ -576,7 +576,7 @@
   <joint name="robot1_joint_6" type="revolute">
     <parent link="robot1_link_5"/>
     <child link="robot1_link_6"/>
-    <axis xyz="0.0 0.0 1.0"/>
+    <axis xyz="1.0 0.0 0.0"/>
     <dynamics damping="0.2" friction="0.0"/>
     <limit lower="-5.23599" upper="5.23599" effort="100000.0" velocity="7.854"/>
     <origin xyz="0.174 0.0 0.0" rpy="0.0 0.0 0.0"/>
@@ -666,7 +666,7 @@
   <joint name="robot2_joint_6" type="revolute">
     <parent link="robot2_link_5"/>
     <child link="robot2_link_6"/>
-    <axis xyz="0.0 0.0 1.0"/>
+    <axis xyz="1.0 0.0 0.0"/>
     <dynamics damping="0.2" friction="0.0"/>
     <limit lower="-5.23599" upper="5.23599" effort="100000.0" velocity="7.854"/>
     <origin xyz="0.174 0.0 0.0" rpy="0.0 0.0 0.0"/>
