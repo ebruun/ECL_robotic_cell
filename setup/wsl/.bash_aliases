@@ -22,6 +22,7 @@ alias l='ls -CF'
 alias moveit="roslaunch moveit_setup_assistant setup_assistant.launch"
 alias moveit_2rob_cell="roslaunch ~/catkin_ws/src/moveit_2rob_cell/launch/demo.launch"
 alias moveit_3rob_cell="roslaunch ~/catkin_ws/src/moveit_3rob_cell/launch/demo.launch"
+alias moveit_bar_lab="roslaunch ~/catkin_ws/src/moveit_bar_lab/launch/demo.launch"
 alias ros_disp_2rob="roslaunch princeton_2rob_cell display.launch"
 alias ros_disp_3rob="roslaunch princeton_3rob_cell display.launch"
 
@@ -88,3 +89,8 @@ function all_moveit_copy () {
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/moveit_3rob_cell ~/catkin_ws/src;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/moveit_irb7600 ~/catkin_ws/src;}
 export -f all_moveit_copy
+
+function bar_moveit_copy () {
+        rm -R ~/catkin_ws/src/moveit_bar_lab;
+        cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/moveit_bar_lab ~/catkin_ws/src;}
+export -f bar_moveit_copy
