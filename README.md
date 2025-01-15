@@ -88,6 +88,10 @@ Basically work in Linux (through WSL), and then copy files that are generated ov
 
 ## Making URDFs with ROS
 
+linux:
+edvard_b
+password: yolo420!
+
 .bashrc and .bashalias files:
 * copy the `.bashrc` and `.bash_aliases` files to the root directory in WSL
   * `cd ~` and `ls -la` to see dot files

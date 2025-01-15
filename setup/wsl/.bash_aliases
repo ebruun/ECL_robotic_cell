@@ -33,6 +33,8 @@ export -f bashrc
 function copy_load_bash_files () {
     cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/wsl/.bashrc ~/.bashrc;
     cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/wsl/.bash_aliases ~/.bash_aliases;
+#     cp -R /mnt/c/Users/Edvard/Documents/GitHub_BAR/internal-docs/configs/zsh/.zshrc ~/.zshrc;
+#     cp -R /mnt/c/Users/Edvard/Documents/GitHub_BAR/internal-docs/configs/zsh/.zshrc ~/.zshrc;
     source ~/.bashrc;}
 export -f copy_load_bash_files
 
