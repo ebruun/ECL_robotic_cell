@@ -1,6 +1,7 @@
 #PROJECT SPECIFIC
 *.3dmbak
 *.rhl
+*.stlbak
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
