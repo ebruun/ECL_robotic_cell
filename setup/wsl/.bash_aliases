@@ -45,12 +45,14 @@ function all_xacro_copy () {
         rm -R ~/catkin_ws/src/princeton_2rob_cell;
         rm -R ~/catkin_ws/src/princeton_3rob_cell;
         rm -R ~/catkin_ws/src/abb_resources;
+        rm -R ~/catkin_ws/src/bar_lab;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/abb_irb4600_40_255 ~/catkin_ws/src;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/abb_irb7600_400_255 ~/catkin_ws/src;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/abb_on_axis ~/catkin_ws/src;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/princeton_2rob_cell ~/catkin_ws/src;
         cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/princeton_3rob_cell ~/catkin_ws/src;
-        cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/abb_resources ~/catkin_ws/src;}
+        cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/abb_resources ~/catkin_ws/src;
+        cp -R /mnt/c/Users/Edvard/Documents/GitHub/ECL_robotic_cell/setup/catkin/bar_lab ~/catkin_ws/src;}
 export -f all_xacro_copy
 
 function all_urdf_make () {

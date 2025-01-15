@@ -86,6 +86,19 @@ Generating xacros and moveit files with Ubuntu running on Windows.
 
 Basically work in Linux (through WSL), and then copy files that are generated over to location on local Windows system
 
+There is some windows setup requires for XMing, add the IP address to the X0.hosts file. https://compas.dev/compas_fab/latest/backends/web_x11_gui.html#backends-gui
+
+
+open as admin: `notepad C:\Program Files (x86)\Xming\X0.hosts`, add the following
+
+```
+localhost
+143.215.121.124
+```
+
+Then export `DISPLAY=YOUR_IP_ADDRESS:0.0` on the WSL side. Type `xclock` to see if it work.
+
+
 ## Making URDFs with ROS
 
 linux:
