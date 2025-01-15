@@ -96,7 +96,13 @@ localhost
 143.215.121.124
 ```
 
-Then export `DISPLAY=YOUR_IP_ADDRESS:0.0` on the WSL side. Type `xclock` to see if it work.
+Then type `export DISPLAY=143.215.121.124:0.0` on the WSL side. Type `xclock` to see if it work.
+
+```
+echo $DISPLAY
+```
+
+You might have to do this re-export after each time you copy the `.bashrc` file in
 
 
 ## Making URDFs with ROS
@@ -124,6 +130,15 @@ xacro files:
   * NOTE THAT CURRENTLY 3ROB CELL THERE IS MANUAL TWEAKING IN THE URDF FILE FOR THE POSITION OF THE 3RD ROBOT...
 * Run `catkin_make`
 * Run `source devel/setup.bash`
+
+Okay an important error occurs, everytime you copy folders in catkin_ws, you have to rebuild with `catkin_make` in the `~/catkin_ws` folder otherwise the following error appears:
+
+```
+[rosrun] Couldn't find executable named xacro below /opt/ros/noetic/share/xacro
+[rosrun] Found the following, but they're either not files,
+[rosrun] or not executable:
+[rosrun]   /opt/ros/noetic/share/xacro
+```
 
 ## Check the generated URDFs and moveit
 
