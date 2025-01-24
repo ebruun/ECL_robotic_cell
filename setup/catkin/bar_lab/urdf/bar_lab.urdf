@@ -276,18 +276,18 @@
   <link name="robot1_tool0"/>
   <link name="bridge2">
     <visual>
-      <origin xyz="0.0 7.3075116 0.0" rpy="0.0 0.0 -3.1415926535895866"/>
+      <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0"/>
       <geometry>
-        <mesh filename="package://bar_lab/meshes/visual/y_gantry.stl"/>
+        <mesh filename="package://bar_lab/meshes/visual/y_gantry2.stl"/>
       </geometry>
       <material name="gt_blue">
         <color rgba="0.0 0.188235 0.341176 1.0"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0"/>
       <geometry>
-        <mesh filename="package://bar_lab/meshes/collision/y_gantry.stl"/>
+        <mesh filename="package://bar_lab/meshes/collision/y_gantry2.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -307,7 +307,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -3.1415926535895866"/>
       <geometry>
         <mesh filename="package://bar_lab/meshes/collision/xy_cart.stl"/>
       </geometry>
@@ -320,7 +320,7 @@
   </link>
   <link name="robot2_base">
     <visual>
-      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -3.1415926535895866"/>
       <geometry>
         <mesh filename="package://bar_lab/meshes/visual/z_axis.stl"/>
       </geometry>
