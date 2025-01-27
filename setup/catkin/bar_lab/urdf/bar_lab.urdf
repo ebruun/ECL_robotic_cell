@@ -71,7 +71,7 @@
     <visual>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="package://bar_lab/meshes/visual/y_gantry.stl"/>
+        <mesh filename="package://bar_lab/meshes/visual/y_gantry1.stl"/>
       </geometry>
       <material name="gt_blue">
         <color rgba="0.0 0.188235 0.341176 1.0"/>
@@ -80,7 +80,7 @@
     <collision>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="package://bar_lab/meshes/collision/y_gantry.stl"/>
+        <mesh filename="package://bar_lab/meshes/collision/y_gantry1.stl"/>
       </geometry>
     </collision>
     <inertial>
