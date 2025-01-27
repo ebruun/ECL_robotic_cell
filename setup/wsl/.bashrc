@@ -103,6 +103,10 @@ LS_COLORS=$LS_COLORS:'di=1;4;97;42:' ; export LS_COLORS
 source /opt/ros/noetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
 
-# For moveit stuff to show up
-export DISPLAY=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'):0.0
-export LIBGL_ALWAYS_INDIRECT=0
+### For moveit stuff to show up
+#dont do this anymore because have to export the hardcoded IP address as per readme
+# export DISPLAY=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'):0.0
+export DISPLAY=143.215.121.124:0.0
+
+# export LIBGL_ALWAYS_INDIRECT=0
+export LIBGL_ALWAYS_SOFTWARE=1 #this forces CPU based rendering
