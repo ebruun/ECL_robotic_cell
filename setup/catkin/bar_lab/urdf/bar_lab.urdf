@@ -581,15 +581,15 @@
     <limit lower="-5.23599" upper="5.23599" effort="100000.0" velocity="7.854"/>
     <origin xyz="0.174 0.0 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
+  <!-- rotate joint so +z is the positive direction of tcp, specify tool offset in +z -->
   <joint name="robot1_joint_6-tool0" type="fixed">
     <parent link="robot1_link_6"/>
     <child link="robot1_tool0"/>
-    <axis xyz="1.0 0.0 0.0"/>
-    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5707963267948966 0.0"/>
   </joint>
   <!--  -->
   <!--  -->
-  <!-- BRUDGE 2 JOINTS -->
+  <!-- BRIDGE 2 JOINTS -->
   <joint name="bridge2_joint_EA_X" type="prismatic">
     <parent link="x_rail"/>
     <child link="bridge2"/>
@@ -671,10 +671,10 @@
     <limit lower="-5.23599" upper="5.23599" effort="100000.0" velocity="7.854"/>
     <origin xyz="0.174 0.0 0.0" rpy="0.0 0.0 0.0"/>
   </joint>
+  <!-- rotate joint so +z is the positive direction of tcp, specify tool offset in +z -->
   <joint name="robot2_joint_6-tool0" type="fixed">
     <parent link="robot2_link_6"/>
     <child link="robot2_tool0"/>
-    <axis xyz="1.0 0.0 0.0"/>
-    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5707963267948966 0.0"/>
   </joint>
 </robot>
