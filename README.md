@@ -67,6 +67,21 @@ This should allow you to work with any of these setups, to do path planning and 
 Set the GUI variable to TRUE to see the rviz launch moveit
 Set the RRC variable to TRUE for robot control
 
+---
+
+new things 2025:
+* new set of docker-compose files in GT_BAR_lab
+* deleted the Dockerfile, not sure it did anything anyways
+  
+For now everything works with the `main.launch` approach as in previous application.
+
+But see a more modular approach to this as prepared my Gonzalo: https://marble-forest-5bf.notion.site/MoveIt-config-12968e040d6980788592de0f55547080
+
+this is what Gonzalo says: "if we get really picky about terminology: we have one image and two versions of the docker-compose.yml. These docker-compose files will launch multiple containers (more than two) using the same image. In the first stage of the process, we launch a first version of docker-compose file that launches multiple containers -one of them being the setup assistant. In the second stage, ready to plan, that container is replaced with the moveit container"
+
+This way the moveit setup assistant is launched out of the container, rather than running a separate one from WSL2. This is what caused issues, and mismatched between the files moveit assistant was generating and the files needed to run moveit from container. This should ensure that the moveit files generated are compatible with moveit definition in the container.
+
+
 ## Windows and ROS
 
 Generating xacros and moveit files with Ubuntu running on Windows.
